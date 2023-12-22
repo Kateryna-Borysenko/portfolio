@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Цвета бренда */
+  --brand-deep-charcoal: #282626ff; /* Глубокий Шаркоал - насыщенный темно-серый, почти черный цвет */
+  --brand-rich-mahogany: #4e2422ff; /* Богатый Махагон - глубокий коричнево-красный цвет */
+  --brand-dark-maroon: #372827ff; /* Темно-Бордовый - темный, насыщенный оттенок красно-коричневого */
+  --brand-navy-blue: #1e2d44ff; /* Темно-Синий - глубокий и интенсивный синий цвет */
+  --brand-burnt-sienna: #b2492cff; /* Обожженная Сиена - яркий и насыщенный ржаво-красный цвет */
+  --brand-smoky-gray: #4c4646ff; /* Дымчатый Серый - средний оттенок серого с нотками коричневого */
+  --brand-onyx-black: #393836ff; /* Ониксовый Черный - очень темный оттенок серого, почти черный */
+  --brand-light-mocha: #a59f9dff; /* Светлый Мокко - теплый, светло-коричневый цвет */
+
+  /* Цвета интерфейса пользователя */
+  --ui-primary: #262626; /* Основной цвет интерфейса: очень темно-серый */
+  --ui-secondary: #757575; /* Второстепенный цвет интерфейса: средне-серый */
+  --ui-tertiary: #f1f1f1; /* Третичный цвет интерфейса: очень светло-серый */
+  --ui-quaternary: #ffffff; /* Четвертичный цвет интерфейса: белый */
+  --ui-disabled: #dedede; /* Цвет для неактивных элементов: светло-серый */
+  --ui-error: #c60e0e; /* Цвет для ошибок: красно-оранжевый */
+  --ui-success: #138000; /* Цвет для успешных действий: темно-зеленый */
+
+  /* Цвета фона */
+  --bg-primary: #ffffff; /* Основной цвет фона: белый */
+  --bg-secondary: #f1f1f1; /* Второстепенный цвет фона: очень светло-серый */
+
+  /* Цвета текста */
+  --text-primary: #282626ff; /* Основной цвет текста: очень темно-серый */
+  --text-secondary: #757575; /* Второстепенный цвет текста: средне-серый */
+  --text-disabled: #9c9c9c; /* Цвет для неактивного текста: темно-серый */
+  --text-inverse: #ffffff; /* Инверсный цвет текста: белый */
+  --text-error: #c60e0e; /* Цвет текста для ошибок: глубокий красный */
+  --text-success: #138000; /* Цвет текста для успешных действий: темно-зеленый */
+
+  /* Определение семейств шрифтов */
+  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Roboto Slab', serif;
+
+  /* Определение веса шрифтов */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Определение размеров шрифтов */
+  --font-size-caption: 14px;
+  --font-size-button: 16px;
+  --font-size-body: 18px;
+  --font-size-title: 24px;
+  --font-size-h5: 27px;
+  --font-size-h4: 30px;
+  --font-size-h3: 36px;
+  --font-size-h2: 48px;
+  --font-size-h1: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
