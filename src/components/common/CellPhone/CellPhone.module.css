@@ -1,3 +1,8 @@
+.cell_phone {
+  font-size: var(--font-size-button);
+}
+
 .cell_phone:hover {
+  font-size: var(--font-size-button);
   color: var(--ui-hover);
 }
