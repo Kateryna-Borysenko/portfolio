@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '../../uikit/Button/Button';
 import image from '../../images/hero-img.png';
+import Paper from '../../components/common/Paper/Paper';
 import s from './HeroBanner.module.css';
 
 const HeroBanner = () => {
@@ -10,7 +11,7 @@ const HeroBanner = () => {
     navigate('/contacts');
   };
   return (
-    <div className={s.main_container}>
+    <Paper>
       <div className={s.content_container}>
         <h1 className={s.title}>
           Manifesting <br /> bold imaginations
@@ -26,7 +27,7 @@ const HeroBanner = () => {
       <div className={s.img_container}>
         <img className={s.img} src={image} alt="Developer Logo" />
       </div>
-    </div>
+    </Paper>
   );
 };
 

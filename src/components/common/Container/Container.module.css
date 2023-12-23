@@ -1,5 +1,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  background-image: url('../../../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
 }

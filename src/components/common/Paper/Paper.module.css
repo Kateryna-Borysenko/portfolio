@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  width: 900px;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: var(--bg-secondary);
+}

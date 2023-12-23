@@ -1,5 +1,6 @@
 .container {
   text-transform: uppercase;
   font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
   letter-spacing: 1px;
 }

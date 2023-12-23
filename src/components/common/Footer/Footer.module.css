@@ -1,4 +1,8 @@
 .container {
-  border-top: 1px solid var(--brand-burnt-sienna);
-  height: 80px;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  background-color: var(--bg-primary);
+  background-color: var(--bg-tertiary);
+  color: var(--text-inverse);
+  height: 150px;
 }
