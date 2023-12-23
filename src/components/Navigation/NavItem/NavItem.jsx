@@ -13,7 +13,7 @@ const NavItem = ({ id, to, name }) => {
       key={id}
       to={to}
       style={{
-        color: match ? 'var(--ui-active)' : 'var(--ui-primary)',
+        color: match ? 'var(--ui-active)' : 'var(--ui-primary',
       }}
     >
       {name}

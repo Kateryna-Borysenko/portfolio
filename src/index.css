@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
 
 :root {
   /* Цвета бренда */
@@ -25,8 +25,8 @@
 
   /* Цвета фона */
   --bg-primary: #ffffff; /* Основной цвет фона: белый */
-  --bg-secondary: #f1f1f1; /* Второстепенный цвет фона: очень светло-серый */
-  --bg-tertiary: #efeee8; /* Третичный цвет фона: очень светло-бежевый */
+  --bg-secondary: #e4e2d3; /* Второстепенный цвет фона: очень светло-серый */
+  --bg-tertiary: #282626ff; /* Третичный цвет фона: очень светло-бежевый */
 
   /* Цвета текста */
   --text-primary: #282626ff; /* Основной цвет текста: очень темно-серый */
@@ -39,6 +39,7 @@
   /* Определение семейств шрифтов */
   --font-body: 'Open Sans', sans-serif;
   --font-heading: 'Roboto Slab', serif;
+  --font-signature: 'Dancing Script', cursive;
 
   /* Определение веса шрифтов */
   --font-weight-light: 300;

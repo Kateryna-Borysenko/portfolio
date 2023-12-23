@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  background-color: var(--bg-tertiary);
+  margin-top: 30px;
+  padding: 14px 0;
+  min-width: 240px;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.name {
+  letter-spacing: 2px;
+  color: var(--ui-quaternary);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-tight);
+  display: inline-block;
+}
