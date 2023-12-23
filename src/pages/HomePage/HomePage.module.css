@@ -1,0 +1,9 @@
+.container {
+  margin: 3px 0;
+  padding: 30px 15px;
+  height: calc(100vh - 230px); /* для header и для footer и отступов*/
+  background-image: url('../../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--text-inverse);
+}

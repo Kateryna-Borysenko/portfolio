@@ -12,8 +12,10 @@
   --brand-light-mocha: #a59f9dff; /* Светлый Мокко - теплый, светло-коричневый цвет */
 
   /* Цвета интерфейса пользователя */
+
   --ui-active: #b2492cff;
-  --ui-primary: #282626ff;
+  --ui-hover: #b5845d;
+  --ui-primary: #262626; /* Основной цвет интерфейса: очень темно-серый */
   --ui-secondary: #757575; /* Второстепенный цвет интерфейса: средне-серый */
   --ui-tertiary: #f1f1f1; /* Третичный цвет интерфейса: очень светло-серый */
   --ui-quaternary: #ffffff; /* Четвертичный цвет интерфейса: белый */
@@ -68,6 +70,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary);
+  font-size: var(--font-size-body);
 }
 
 h1,
