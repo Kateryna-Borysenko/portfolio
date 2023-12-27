@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
   padding: 30px;
   box-sizing: border-box;
   background-color: var(--bg-primary);
@@ -7,6 +9,26 @@
   color: var(--text-inverse);
 }
 
+.logo_description {
+  font-size: 14px;
+}
+
 .logo_link {
+  margin: 0;
   color: var(--brand-light-brown);
+}
+
+.title {
+  margin-bottom: 14px;
+}
+
+.email,
+.location {
+  transition: hover 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email:hover,
+.location:hover {
+  color: var(--ui-hover);
+  cursor: pointer;
 }

@@ -5,6 +5,7 @@ import logo from '../../../images/logo.png';
 import { EMAIL } from '../../../utils/constants';
 import { LOCATION } from '../../../utils/constants';
 import { GITHUB_URL } from '../../../utils/urls';
+import { MIAMI_MAP_URL } from '../../../utils/urls';
 
 const Footer = () => {
   return (
@@ -18,18 +19,24 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <img src={logo} alt="Logo" width="100px" />
-          <p>IDEAS IN CODE</p>
+          <p className={s.logo_description}>IDEAS IN CODE</p>
         </a>
 
-        <div>
-          <div>CONTACTS</div>
-          <CellPhone />
-          <div>{EMAIL}</div>
-          <LocalTime />
-          <div>{LOCATION}</div>
+        <div className={s.copyright_info}>
+          © {new Date().getFullYear()} Portfolio. All rights reserved.
         </div>
         <div>
-          © {new Date().getFullYear()} Kateryna Borysenko. All rights reserved.
+          <div className={s.title}>CONTACTS</div>
+          <CellPhone />
+          <div className={s.email}>
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+          </div>
+          <LocalTime />
+          <div className={s.location}>
+            <a href={MIAMI_MAP_URL} target="_blank" rel="noopener noreferrer">
+              {LOCATION}
+            </a>
+          </div>
         </div>
       </div>
     </footer>
