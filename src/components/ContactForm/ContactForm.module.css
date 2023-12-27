@@ -31,6 +31,16 @@
   height: 100px;
 }
 
+.textarea::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: var(--ui-secondary);
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background: #b2492cff;
+}
+
 .icon {
   position: absolute;
   left: 6px;
