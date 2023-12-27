@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useState } from 'react';
 import s from './ContactForm.module.css';
 import Paper from '../common/Paper/Paper';
 import Button from '../../uikit/Button/Button';
@@ -16,7 +17,7 @@ const schema = yup.object().shape({
   name: yup
     .string()
     .min(2, 'Name must be at least 2 characters')
-    .max(15, 'Name must be at most 15 characters')
+    .max(50, 'Name must be at most 15 characters')
     .required('Name is required'),
   email: yup
     .string()
@@ -31,10 +32,7 @@ const schema = yup.object().shape({
     .optional()
     .matches(/^\d{10}$/, 'Invalid phone number format (10 digits)'),
   time: yup.string().optional().max(8, 'Time must be at most 8 characters'),
-  message: yup
-    .string()
-    .max(600, 'Message must be at most 600 characters')
-    .required('Message is required'),
+  message: yup.string().required('Message is required'),
 });
 
 const ContactForm = () => {
@@ -43,8 +41,16 @@ const ContactForm = () => {
   });
   const { errors } = formState;
 
+  const [messageLength, setMessageLength] = useState(0);
+
+  const handleMessageChange = event => {
+    const length = event.target.value.length;
+    setMessageLength(length);
+  };
+
   const onSubmit = data => {
-    console.log(data);
+    console.log('🍒  data:', data);
+    setMessageLength(0);
     reset();
   };
 
@@ -133,11 +139,14 @@ const ContactForm = () => {
                   className={s.textarea}
                   name="message"
                   rows={5}
+                  maxLength={600}
                   {...register('message')}
+                  onChange={handleMessageChange}
                 />
                 {errors.message && (
                   <p className={s.error}>{errors.message?.message}</p>
                 )}
+                <div className={s.counter}>{messageLength}/600</div>
               </div>
             </label>
           </div>

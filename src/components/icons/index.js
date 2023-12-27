@@ -1,7 +1,7 @@
 export { ReactComponent as ArrowIcon } from "../../uikit/static/arrow.svg";
 
 export { ReactComponent as UserIcon } from "../../uikit/static/user.svg";
-export { ReactComponent as EmailIcon } from "../../uikit/static/mail.svg";
+export { ReactComponent as EmailIcon } from "../../uikit/static/email.svg";
 export { ReactComponent as PhoneIcon } from "../../uikit/static/phone.svg";
 export { ReactComponent as ClockIcon } from "../../uikit/static/clock.svg";
 export { ReactComponent as MessageIcon } from "../../uikit/static/massage.svg";
