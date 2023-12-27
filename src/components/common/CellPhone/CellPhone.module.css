@@ -1,5 +1,6 @@
 .cell_phone {
   font-size: var(--font-size-button);
+  letter-spacing: 1.2px;
 }
 
 .cell_phone:hover {
