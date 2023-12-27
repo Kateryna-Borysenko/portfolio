@@ -1,9 +1,5 @@
 export { ReactComponent as ArrowIcon } from "../../uikit/static/arrow.svg";
 
-export { ReactComponent as DarkPhoneIcon } from "../../uikit/static/cell.svg";
-export { ReactComponent as DarkEmailIcon } from "../../uikit/static/email.svg";
-export { ReactComponent as DarkLocationIcon } from "../../uikit/static/location.svg";
-
 export { ReactComponent as UserIcon } from "../../uikit/static/user.svg";
 export { ReactComponent as EmailIcon } from "../../uikit/static/mail.svg";
 export { ReactComponent as PhoneIcon } from "../../uikit/static/phone.svg";

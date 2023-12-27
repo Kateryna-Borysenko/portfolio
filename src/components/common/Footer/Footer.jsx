@@ -23,7 +23,7 @@ const Footer = () => {
         </a>
 
         <div className={s.copyright_info}>
-          © {new Date().getFullYear()} Portfolio. All rights reserved.
+          All rights reserved © {new Date().getFullYear()}
         </div>
         <div>
           <div className={s.title}>CONTACTS</div>

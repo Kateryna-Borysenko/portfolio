@@ -1,0 +1,45 @@
+.title {
+  font-family: var(--font-heading);
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.label {
+  display: block;
+  font-size: var(--font-size-caption);
+}
+
+.input_container {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  font-family: inherit;
+  min-width: 400px;
+  font-size: 16px;
+  padding: 12px 8px 12px 36px;
+  border: transparent;
+  background-color: var(--bg-secondary);
+  outline: none;
+  border-bottom: 2px solid var(--ui-primary);
+  margin-bottom: 24px;
+}
+
+.textarea {
+  composes: input;
+  height: 100px;
+}
+
+.icon {
+  position: absolute;
+  left: 6px;
+  top: 10px;
+  height: 24px;
+}
+
+.error {
+  position: absolute;
+  color: var(--ui-error);
+  bottom: 4px;
+}
