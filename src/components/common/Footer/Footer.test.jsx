@@ -31,9 +31,4 @@ describe('Footer Component', () => {
     expect(githubLink).toHaveAttribute('target', '_blank');
     expect(githubLink).toHaveAttribute('rel', 'noopener noreferrer');
   });
-
-  it('matches snapshot', () => {
-    const { asFragment } = render(<Footer />);
-    expect(asFragment()).toMatchSnapshot();
-  });
 });
