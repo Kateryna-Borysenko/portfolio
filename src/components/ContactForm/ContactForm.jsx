@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -48,10 +49,17 @@ const ContactForm = () => {
     setMessageLength(length);
   };
 
-  const onSubmit = data => {
-    console.log('🍒  data:', data);
-    setMessageLength(0);
-    reset();
+  const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+
+  const onSubmit = async data => {
+    try {
+      const response = await axios.post(`${SERVER_URL}/send-email`, data);
+      setMessageLength(0);
+      console.log('🍒  response data:', response.data); //можно показать pop up об успешной отправке
+      reset();
+    } catch (error) {
+      console.log('⛔️ error:', error);
+    }
   };
 
   return (
