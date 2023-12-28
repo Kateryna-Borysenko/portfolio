@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -43,6 +43,12 @@ const ContactForm = () => {
   });
   const { errors } = formState;
 
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   const [messageLength, setMessageLength] = useState(0);
 
   const handleMessageChange = event => {
@@ -81,6 +87,7 @@ const ContactForm = () => {
                     name="name"
                     type="text"
                     {...register('name')}
+                    ref={inputRef}
                   />
                   {errors.name && (
                     <p className={s.error}>{errors.name?.message}</p>
