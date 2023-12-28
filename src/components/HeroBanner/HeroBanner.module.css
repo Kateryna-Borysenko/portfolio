@@ -27,6 +27,8 @@
 }
 
 .img {
+  min-width: 345px;
+  min-height: 356px;
   background-image: url('../../images/bg.jpg');
   background-size: contain;
   background-position: center;
