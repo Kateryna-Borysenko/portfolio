@@ -1,11 +1,12 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import s from './ContactForm.module.css';
 import Paper from '../common/Paper/Paper';
 import Button from '../../uikit/Button/Button';
+import Socials from '../../components/common/Socials/Socials';
 import {
   UserIcon,
   EmailIcon,
@@ -20,12 +21,6 @@ const ContactForm = () => {
     resolver: yupResolver(schema),
   });
   const { errors } = formState;
-
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
 
   const [messageLength, setMessageLength] = useState(0);
 
@@ -48,9 +43,9 @@ const ContactForm = () => {
   };
 
   return (
-    <>
+    <div className={s.container}>
       <Paper>
-        <div className={s.container}>
+        <div>
           <h1 className={s.title}>Let's have a chat</h1>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className={s.form}>
@@ -65,14 +60,12 @@ const ContactForm = () => {
                     name="name"
                     type="text"
                     {...register('name')}
-                    ref={inputRef}
                   />
                   {errors.name && (
                     <p className={s.error}>{errors.name?.message}</p>
                   )}
                 </div>
               </label>
-
               <label className={s.label}>
                 E-MAIL
                 <div className={s.input_container}>
@@ -149,7 +142,8 @@ const ContactForm = () => {
           </form>
         </div>
       </Paper>
-    </>
+      <Socials />
+    </div>
   );
 };
 
