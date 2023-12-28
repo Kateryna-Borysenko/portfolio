@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Container from '../common/Container/Container';
 import { Routes, Route } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
@@ -9,6 +11,13 @@ import ContactsPage from '../../pages/ContactsPage/ContactsPage';
 function App() {
   return (
     <Container>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        closeOnClick
+        pauseOnHover
+        theme="dark"
+      />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
