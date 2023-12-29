@@ -8,26 +8,22 @@ export const navConfig = [{
   path: "/about",
 }, {
   id: 3,
-  name: "Tech Skills",
-  path: "/tech-skills",
+  name: "Skills",
+  path: "/skills",
 }, {
   id: 4,
-  name: "Soft Skills",
-  path: "/soft-skills",
-}, {
-  id: 5,
   name: "Projects",
   path: "/projects",
 }, {
-  id: 6,
+  id: 5,
   name: "Certificates",
   path: "/certificates",
 }, {
-  id: 7,
+  id: 6,
   name: "Feedbacks",
   path: "/feedbacks",
 }, {
-  id: 8,
+  id: 7,
   name: "Contacts",
   path: "/contacts",
 },]

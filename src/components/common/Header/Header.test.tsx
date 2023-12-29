@@ -16,8 +16,7 @@ describe('Header Component', () => {
     const navItems = [
       'Home',
       'About Me',
-      'Tech Skills',
-      'Soft Skills',
+      'Skills',
       'Projects',
       'Certificates',
       'Feedbacks',

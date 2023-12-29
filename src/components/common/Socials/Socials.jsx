@@ -1,5 +1,5 @@
-import s from './Socials.module.css';
 import { socials } from '../../../data/socials';
+import s from './Socials.module.css';
 
 const Socials = () => {
   return (
