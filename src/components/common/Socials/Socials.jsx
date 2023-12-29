@@ -8,6 +8,7 @@ const Socials = () => {
       <ul className={s.socials_list}>
         {socials.map(({ id, name, icon, url }) => (
           <a
+            key={id}
             className={s.item}
             href={url}
             target="_blank"

@@ -2,16 +2,17 @@ import { toast } from 'react-toastify';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Paper from '../common/Paper/Paper';
+import LightButton from '../../uikit/LightButton/LightButton';
 import { ArrowIcon } from '../icons';
 import img from '../../images/about.png';
+import 'react-toastify/dist/ReactToastify.css';
 import s from './AboutContent.module.css';
-import LightButton from '../../uikit/LightButton/LightButton';
 
 const AboutContent = () => {
   const navigate = useNavigate();
 
   const handleDownloadBtnClick = useCallback(() => {
-    fetch('/cv_frontend_react_borysenko.pdf')
+    fetch(process.env.REACT_APP_CV_URL)
       .then(response => response.blob())
       .then(blob => {
         const url = window.URL.createObjectURL(blob);
@@ -22,7 +23,9 @@ const AboutContent = () => {
         a.click();
         a.remove();
         window.URL.revokeObjectURL(url);
-        toast.success('CV was downloaded successfully');
+        toast.success('CV was downloaded successfully', {
+          position: toast.POSITION.TOP_LEFT,
+        });
       })
       .catch(error => {
         toast.error(
@@ -39,23 +42,26 @@ const AboutContent = () => {
     <Paper>
       <div className={s.container}>
         <div className={s.top_container}>
-          <div className={s.btn_container}>
+          <div className={s.title_container}>
             <div className={s.position}>Fullstack Developer</div>
+            <h2 className={s.title}>Kateryna Borysenko</h2>
+          </div>
+          <div className={s.btn_container}>
             <LightButton name="Download CV" onClick={handleDownloadBtnClick} />
             <LightButton
               name="Certificates"
               onClick={handleCertificateBtnClick}
             />
           </div>
-          <ArrowIcon className={s.arrow_icon} />
-
-          <h1 className={s.title}>Kateryna Borysenko</h1>
         </div>
         <div className={s.bottom_container}>
           <section className={s.description_section}>
             <p className={s.paragraph}>
-              <span className={s.accent}>Hey, that's my name up there. </span>I
-              am a Fullstack Developer with a rich two-year experience in
+              <span className={s.accent}>
+                Hey, that's my name up there.
+                <ArrowIcon className={s.arrow_icon} />
+              </span>
+              I'm a Fullstack Developer with a rich two-year experience in
               creating dynamic web applications. Originally from the picturesque
               regions of Eastern Ukraine, I have recently found a new home in
               sunny Florida – a change brought about by turbulent times in my
@@ -88,11 +94,11 @@ const AboutContent = () => {
             <p className={s.paragraph}>
               <span className={s.accent}>Proficient in </span>
               React, Redux, Redux thunk, React testing library, HTML5, CSS3,
-              SASS, JavaScript, TypeScript.
+              SASS, JavaScript, TypeScript, REST API.
             </p>
             <p className={s.paragraph}>
               <span className={s.accent}>Familiar with </span>
-              NodeJS, Express, Mongo DB, React Native, Next JS.
+              NodeJS, Express, Mongo DB, React Native, Next JS, GraphQL, Apollo.
             </p>
             <p className={s.paragraph}>
               <span className={s.accent}>Other Tools: </span>

@@ -2,30 +2,34 @@
   width: 1020px;
 }
 
+.top_container {
+  display: flex;
+}
+
+.title_container {
+  width: 50%;
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+  align-items: flex-end;
+}
+
 .position {
   font-family: var(--font-heading);
   letter-spacing: 1px;
 }
 
-.btn_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .title {
   font-family: var(--font-heading);
-  margin: 10px 0 84px;
-}
-
-.top_container {
-  position: relative;
+  font-size: var(--font-size-h2);
+  margin: 30px 0 64px;
 }
 
 .arrow_icon {
-  position: absolute;
-  bottom: -72px;
-  left: 208px;
   width: 40px;
 }
 

@@ -12,13 +12,22 @@ exports[`AboutContent renders correctly and matches snapshot 1`] = `
         class="top_container"
       >
         <div
-          class="btn_container"
+          class="title_container"
         >
           <div
             class="position"
           >
             Fullstack Developer
           </div>
+          <h2
+            class="title"
+          >
+            Kateryna Borysenko
+          </h2>
+        </div>
+        <div
+          class="btn_container"
+        >
           <button
             class="button"
           >
@@ -30,16 +39,6 @@ exports[`AboutContent renders correctly and matches snapshot 1`] = `
             Certificates
           </button>
         </div>
-        <svg
-          class="arrow_icon"
-        >
-          arrow.svg
-        </svg>
-        <h1
-          class="title"
-        >
-          Kateryna Borysenko
-        </h1>
       </div>
       <div
         class="bottom_container"
@@ -53,9 +52,14 @@ exports[`AboutContent renders correctly and matches snapshot 1`] = `
             <span
               class="accent"
             >
-              Hey, that's my name up there. 
+              Hey, that's my name up there.
+              <svg
+                class="arrow_icon"
+              >
+                arrow.svg
+              </svg>
             </span>
-            I am a Fullstack Developer with a rich two-year experience in creating dynamic web applications. Originally from the picturesque regions of Eastern Ukraine, I have recently found a new home in sunny Florida – a change brought about by turbulent times in my homeland.
+            I'm a Fullstack Developer with a rich two-year experience in creating dynamic web applications. Originally from the picturesque regions of Eastern Ukraine, I have recently found a new home in sunny Florida – a change brought about by turbulent times in my homeland.
           </p>
           <p
             class="paragraph"
