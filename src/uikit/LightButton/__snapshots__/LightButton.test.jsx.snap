@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LightButton Component matches snapshot 1`] = `
+<DocumentFragment>
+  <button
+    class="button"
+  >
+    Snapshot Test
+  </button>
+</DocumentFragment>
+`;
