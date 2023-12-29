@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutContent renders correctly and matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="top_container"
+      >
+        <div
+          class="btn_container"
+        >
+          <div
+            class="position"
+          >
+            Fullstack Developer
+          </div>
+          <button
+            class="button"
+          >
+            Download CV
+          </button>
+          <button
+            class="button"
+          >
+            Certificates
+          </button>
+        </div>
+        <svg
+          class="arrow_icon"
+        >
+          arrow.svg
+        </svg>
+        <h1
+          class="title"
+        >
+          Kateryna Borysenko
+        </h1>
+      </div>
+      <div
+        class="bottom_container"
+      >
+        <section
+          class="description_section"
+        >
+          <p
+            class="paragraph"
+          >
+            <span
+              class="accent"
+            >
+              Hey, that's my name up there. 
+            </span>
+            I am a Fullstack Developer with a rich two-year experience in creating dynamic web applications. Originally from the picturesque regions of Eastern Ukraine, I have recently found a new home in sunny Florida – a change brought about by turbulent times in my homeland.
+          </p>
+          <p
+            class="paragraph"
+          >
+            My professional story is a path of relentless discoveries and bold technological solutions. I have mastered a multitude of tools from HTML5 to Node.js and take pride in transforming code into art that enhances people's lives.
+          </p>
+          <p
+            class="paragraph"
+          >
+            I believe that every project is not just a task, but a story that requires a personalized approach and creativity. My attention to detail, ability to see the bigger picture, and passion for innovation allow me to create products that are not only functional but also inspiring.
+          </p>
+          <p
+            class="paragraph"
+          >
+            <span
+              class="accent"
+            >
+              Today, actively seeking new opportunities, I am ready to apply my skills to ambitious projects.
+            </span>
+          </p>
+        </section>
+        <section
+          class="quote_section"
+        >
+          <img
+            alt="Developer"
+            class="image"
+            src="about.png"
+          />
+        </section>
+        <section
+          class="experience_section"
+        >
+          <p
+            class="paragraph"
+          >
+            <span
+              class="accent"
+            >
+              Proficient in 
+            </span>
+            React, Redux, Redux thunk, React testing library, HTML5, CSS3, SASS, JavaScript, TypeScript.
+          </p>
+          <p
+            class="paragraph"
+          >
+            <span
+              class="accent"
+            >
+              Familiar with 
+            </span>
+            NodeJS, Express, Mongo DB, React Native, Next JS.
+          </p>
+          <p
+            class="paragraph"
+          >
+            <span
+              class="accent"
+            >
+              Other Tools: 
+            </span>
+            Figma, Git, GitHub, GitLab, Jira, Trello.
+          </p>
+          <p
+            class="paragraph"
+          >
+            <span
+              class="accent"
+            >
+              Methodologies: 
+            </span>
+            Agile, Scrum, Responsive and Adaptive Design, BEM.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

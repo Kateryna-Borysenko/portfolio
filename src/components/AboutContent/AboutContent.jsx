@@ -1,14 +1,37 @@
+import { toast } from 'react-toastify';
+import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Paper from '../common/Paper/Paper';
 import { ArrowIcon } from '../icons';
-
 import img from '../../images/about.png';
 import s from './AboutContent.module.css';
+import LightButton from '../../uikit/LightButton/LightButton';
 
 const AboutContent = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleDownloadBtnClick = useCallback(() => {
+    fetch('/cv_frontend_react_borysenko.pdf')
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'cv_frontend_react_borysenko.pdf';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        window.URL.revokeObjectURL(url);
+        toast.success('CV was downloaded successfully');
+      })
+      .catch(error => {
+        toast.error(
+          `There was an error downloading the file: ${error.message}`,
+        );
+      });
+  }, []);
+
+  const handleCertificateBtnClick = () => {
     navigate('/certificates');
   };
 
@@ -18,9 +41,11 @@ const AboutContent = () => {
         <div className={s.top_container}>
           <div className={s.btn_container}>
             <div className={s.position}>Fullstack Developer</div>
-            <button className={s.certificates_btn} onClick={handleClick}>
-              Certificates
-            </button>
+            <LightButton name="Download CV" onClick={handleDownloadBtnClick} />
+            <LightButton
+              name="Certificates"
+              onClick={handleCertificateBtnClick}
+            />
           </div>
           <ArrowIcon className={s.arrow_icon} />
 
@@ -67,7 +92,7 @@ const AboutContent = () => {
             </p>
             <p className={s.paragraph}>
               <span className={s.accent}>Familiar with </span>
-              NodeJS, Express, MongoDB, React Native.
+              NodeJS, Express, Mongo DB, React Native, Next JS.
             </p>
             <p className={s.paragraph}>
               <span className={s.accent}>Other Tools: </span>

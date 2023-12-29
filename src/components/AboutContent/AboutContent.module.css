@@ -13,24 +13,6 @@
   align-items: center;
 }
 
-.certificates_btn {
-  max-width: 190px;
-  font-size: var(--font-size-button);
-  letter-spacing: 1.5px;
-  border: 1px solid var(--text-primary);
-  background-color: transparent;
-  padding: 14px 0;
-  width: 100%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.certificates_btn:hover {
-  cursor: pointer;
-  color: var(--ui-hover);
-  border-color: var(--ui-hover);
-}
-
 .title {
   font-family: var(--font-heading);
   margin: 10px 0 84px;
