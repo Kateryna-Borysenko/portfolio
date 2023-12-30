@@ -7,7 +7,6 @@ import HomePage from '../../pages/HomePage/HomePage';
 import AboutPage from '../../pages/AboutPage/AboutPage';
 import CertificatesPage from '../../pages/CertificatesPage/CertificatesPage';
 import ContactsPage from '../../pages/ContactsPage/ContactsPage';
-// import s from './App.module.css';
 
 function App() {
   return (
