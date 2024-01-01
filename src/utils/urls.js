@@ -9,3 +9,12 @@ export const FACEBOOK_URL =
 
 export const MIAMI_MAP_URL =
   'https://www.google.com/maps/place/Miami,+FL';
+
+export const INFOPULSE_UNIVER_URL =
+  'https://www.infopulse.com/';
+export const ENGLISH_PRIME_SCHOOL_URL =
+  'https://lp.englishprime.ua/';
+export const GO_IT_URL =
+  'https://goit.global/ua-ru/';
+export const ALPACA_SCHOOL_URL =
+  'https://www.alpacasch.online/';
