@@ -1,3 +1,10 @@
+.container {
+  position: relative;
+}
+.container:hover {
+  cursor: pointer;
+}
+
 .carousel_container {
   display: flex;
   flex-direction: column;
@@ -5,18 +12,13 @@
   justify-content: center;
 }
 
-.carousel_controls {
-  outline: 1px solid yellowgreen;
-  display: flex;
-
-  gap: 20px;
-}
-
 .carousel_image_container {
-  outline: 1px solid blue;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   overflow: hidden;
   justify-content: center;
+  margin-top: -110px;
+  margin-bottom: 20px;
 }
 
 .carousel_image {
@@ -36,22 +38,63 @@
 }
 
 .carousel_indicators {
-  outline: 1px solid white;
   display: flex;
   justify-content: center;
-  padding: 14px;
+  padding: 8px;
+}
+
+.carousel_controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .indicator {
   border: none;
   cursor: pointer;
-  background-color: grey;
+  background-color: var(--ui-secondary);
   margin: 0 5px;
-  width: 20px;
-  height: 3px;
-  /* border-radius: 50%; */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
+
+.back {
+  composes: button;
+  position: absolute;
+  right: 5px;
+}
+
+.forward {
+  composes: button;
+  position: absolute;
+  left: 5px;
 }
 
 .active_indicator {
-  background-color: white;
+  background-color: var(--bg-primary);
+}
+
+.info_block {
+  font-family: var(--font-heading);
+  margin-top: 20px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title:hover {
+  color: var(--ui-hover);
 }

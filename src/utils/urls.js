@@ -15,6 +15,6 @@ export const INFOPULSE_UNIVER_URL =
 export const ENGLISH_PRIME_SCHOOL_URL =
   'https://lp.englishprime.ua/';
 export const GO_IT_URL =
-  'https://goit.global/ua-ru/';
+  'https://goit.global/ua-ru/courses/bootcamp/';
 export const ALPACA_SCHOOL_URL =
   'https://www.alpacasch.online/';
