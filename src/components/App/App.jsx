@@ -1,9 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Container from '../common/Container/Container';
 import Layout from '../../components/Layout/Layout';
+import Spinner from '../../components/common/Spinner/Spinner';
 
 const HomePage = lazy(() =>
   import(
@@ -51,7 +52,7 @@ function App() {
         pauseOnHover
         theme="dark"
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
