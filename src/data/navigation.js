@@ -19,11 +19,11 @@ export const navConfig = [{
   name: "Certificates",
   path: "/certificates",
 },
-// {
-// id: 6,
-// name: "Feedbacks",
-// path: "/feedbacks",
-// },
+{
+  id: 6,
+  name: "Feedbacks",
+  path: "/feedbacks",
+},
 {
   id: 7,
   name: "Contacts",

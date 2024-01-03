@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Paper from '../common/Paper/Paper';
 import { skills } from '../../data/skills';
 import s from './Skills.module.css';

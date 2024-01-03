@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import { render, screen, act } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import HeroBanner from './HeroBanner';
+import HeroBanner from './Hero';
 
 describe('HeroBanner Component', () => {
   test('navigates to /contacts when the button is clicked', async () => {

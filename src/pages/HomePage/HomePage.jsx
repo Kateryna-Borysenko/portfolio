@@ -1,9 +1,9 @@
-import HeroBanner from '../../components/HeroBanner/HeroBanner';
+import Hero from '../../components/Hero/Hero';
 
 const HomePage = () => {
   return (
     <div className="global_container">
-      <HeroBanner />
+      <Hero />
     </div>
   );
 };

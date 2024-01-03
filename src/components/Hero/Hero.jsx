@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import Button from '../../uikit/Button/Button';
 import image from '../../images/hero-img.png';
-import Paper from '../../components/common/Paper/Paper';
-import s from './HeroBanner.module.css';
+import Paper from '../common/Paper/Paper';
+import s from './Hero.module.css';
 
 const HeroBanner = () => {
   const navigate = useNavigate();
