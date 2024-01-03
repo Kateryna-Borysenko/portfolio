@@ -1,15 +1,45 @@
+import React, { Suspense, lazy } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Container from '../common/Container/Container';
-import { Routes, Route } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
-import HomePage from '../../pages/HomePage/HomePage';
-import AboutPage from '../../pages/AboutPage/AboutPage';
-import SkillsPage from '../../pages/SkillsPage/SkillsPage';
-import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage';
-import CertificatesPage from '../../pages/CertificatesPage/CertificatesPage';
-import ContactsPage from '../../pages/ContactsPage/ContactsPage';
-import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
+
+const HomePage = lazy(() =>
+  import(
+    '../../pages/HomePage/HomePage' /* webpackChunkName: "home-page-chunk" */
+  ),
+);
+const AboutPage = lazy(() =>
+  import(
+    '../../pages/AboutPage/AboutPage' /* webpackChunkName: "about-page-chunk" */
+  ),
+);
+const SkillsPage = lazy(() =>
+  import(
+    '../../pages/SkillsPage/SkillsPage' /* webpackChunkName: "skills-page-chunk" */
+  ),
+);
+const ProjectsPage = lazy(() =>
+  import(
+    '../../pages/ProjectsPage/ProjectsPage' /* webpackChunkName: "projects-page-chunk" */
+  ),
+);
+const CertificatesPage = lazy(() =>
+  import(
+    '../../pages/CertificatesPage/CertificatesPage' /* webpackChunkName: "certificates-page-chunk" */
+  ),
+);
+const ContactsPage = lazy(() =>
+  import(
+    '../../pages/ContactsPage/ContactsPage' /* webpackChunkName: "contacts-page-chunk" */
+  ),
+);
+const NotFoundPage = lazy(() =>
+  import(
+    '../../pages/NotFoundPage/NotFoundPage' /* webpackChunkName: "not-found-page-chunk" */
+  ),
+);
 
 function App() {
   return (
@@ -21,17 +51,19 @@ function App() {
         pauseOnHover
         theme="dark"
       />
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/certificates" element={<CertificatesPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/skills" element={<SkillsPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/certificates" element={<CertificatesPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </Container>
   );
 }
