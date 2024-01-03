@@ -29,16 +29,16 @@ const Skills = () => {
       <div className={s.container}>
         <div className={s.btn_container}>
           <button
-            className={activeButton === 'all' ? s.activeButton : ''}
+            className={activeButton === 'all' ? s.active_button : s.button}
             onClick={() => setActiveButton('all')}
           >
-            All
+            All Tech Skills
           </button>
 
           {skillTypes.map(type => (
             <button
               key={type}
-              className={activeButton === type ? s.activeButton : ''}
+              className={activeButton === type ? s.active_button : s.button}
               onClick={() => setActiveButton(type)}
             >
               {type}

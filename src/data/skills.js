@@ -45,7 +45,7 @@ export const skills = [
   },
   {
     id: 3,
-    name: 'CSS3',
+    name: 'CSS 3',
     path: css3,
     alt: 'CSS3 Logo',
     type: 'Programming Languages'
@@ -87,21 +87,21 @@ export const skills = [
   },
   {
     id: 9,
-    name: 'GitHub',
+    name: 'Git Hub',
     path: github,
     alt: 'GitHub Logo',
     type: 'Development Tools'
   },
   {
     id: 10,
-    name: 'GitLab',
+    name: 'Git Lab',
     path: gitlab,
     alt: 'GitLab Logo',
     type: 'Development Tools'
   },
   {
     id: 11,
-    name: 'GraphQL',
+    name: 'Graph QL',
     path: graphql,
     alt: 'GraphQL Logo',
     type: 'Databases and APIs'

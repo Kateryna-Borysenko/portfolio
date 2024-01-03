@@ -1,3 +1,25 @@
+.btn_container {
+  margin-bottom: 60px;
+}
+
+.button {
+  width: calc(1020px / 6);
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: var(--font-size-button);
+  line-height: 1.2;
+  cursor: pointer;
+  border: none;
+}
+
+.active_button {
+  composes: button;
+  color: var(--ui-active);
+}
+
 .list {
   max-width: 1020px;
   max-height: 765px;
