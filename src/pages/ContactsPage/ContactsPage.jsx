@@ -1,9 +1,8 @@
 import ContactForm from '../../components/ContactForm/ContactForm';
-import s from './ContactsPage.module.css';
 
 const ContactsPage = () => {
   return (
-    <div className={s.container}>
+    <div className="global_container">
       <ContactForm />
     </div>
   );

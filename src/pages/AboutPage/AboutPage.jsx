@@ -1,9 +1,8 @@
 import AboutContent from '../../components/AboutContent/AboutContent';
-import s from './AboutPage.module.css';
 
 const AboutPage = () => {
   return (
-    <div className={s.container}>
+    <div className="global_container">
       <AboutContent />
     </div>
   );
