@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Paper from '../../components/common/Paper/Paper';
+import { NotFoundPageIcon } from '../../components/icons';
+import s from './NotFoundPage.module.css';
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
-
   const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {
@@ -25,10 +26,18 @@ const NotFoundPage = () => {
   return (
     <div className="global_container">
       <Paper>
-        <div>
-          <h1>404</h1>
-          <div>
-            Redirect to Home page after <span>{countdown} seconds...</span>
+        <div className={s.container}>
+          <div className={s.icon_container}>
+            <NotFoundPageIcon width="200px" />
+          </div>
+          <div className={s.content_container}>
+            <h1 className={s.title}>Oopsie! We couldn't find this page</h1>
+            <div className={s.description}>
+              Mistakes happen... and that's okay. You will be redirected to
+              <span className={s.accent}> The Home Page</span> and start your
+              journey from there
+              <span className={s.accent}> {countdown} seconds.</span>
+            </div>
           </div>
         </div>
       </Paper>

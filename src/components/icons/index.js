@@ -15,3 +15,5 @@ export { ReactComponent as GithubIcon } from "../../uikit/static/github.svg";
 export { ReactComponent as InstagramIcon } from "../../uikit/static/instagram.svg";
 export { ReactComponent as Facebook } from "../../uikit/static/facebook.svg";
 
+export { ReactComponent as NotFoundPageIcon } from "../../uikit/static/file_error_not_found_icon.svg";
+
