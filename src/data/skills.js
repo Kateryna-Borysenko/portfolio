@@ -25,6 +25,8 @@ import sass from '../images/skills/sass.png';
 import styledComponents from '../images/skills/styled-components.png';
 import trello from '../images/skills/trello.png';
 import mongodb from '../images/skills/mongodb.png';
+import typeScript from '../images/skills/type-script.png';
+import webpack from '../images/skills/webpack.png';
 
 export const skills = [
   {
@@ -215,5 +217,19 @@ export const skills = [
     path: mongodb,
     alt: 'MongoDB Logo',
     type: 'Databases and APIs'
+  },
+  {
+    id: 28,
+    name: 'Type Script',
+    path: typeScript,
+    alt: 'Type Script Logo',
+    type: 'Programming Languages'
+  },
+  {
+    id: 29,
+    name: 'Webpack',
+    path: webpack,
+    alt: 'Webpack Logo',
+    type: 'Development Tools'
   },
 ];
