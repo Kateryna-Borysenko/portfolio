@@ -26,7 +26,12 @@ const HeroBanner = () => {
           <Button name="Contact Me" onClick={handleClick} />
         </div>
         <div className={s.img_container}>
-          <img className={s.img} src={image} alt="Developer Logo" />
+          <img
+            className={s.img}
+            src={image}
+            alt="Developer Logo"
+            loading="lazy"
+          />
         </div>
       </div>
     </Paper>

@@ -87,6 +87,7 @@ exports[`AboutContent renders correctly and matches snapshot 1`] = `
           <img
             alt="Developer"
             class="image"
+            loading="lazy"
             src="about.png"
           />
         </section>

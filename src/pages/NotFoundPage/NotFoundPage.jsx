@@ -6,7 +6,7 @@ import s from './NotFoundPage.module.css';
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
-  const [countdown, setCountdown] = useState(10);
+  const [countdown, setCountdown] = useState(5);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,7 +15,7 @@ const NotFoundPage = () => {
 
     const timer = setTimeout(() => {
       navigate('/');
-    }, 10000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);

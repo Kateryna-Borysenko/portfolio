@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -88,7 +89,7 @@ const AboutContent = () => {
             </p>
           </section>
           <section className={s.quote_section}>
-            <img className={s.image} src={img} alt="Developer" />
+            <img className={s.image} src={img} alt="Developer" loading="lazy" />
           </section>
           <section className={s.experience_section}>
             <p className={s.paragraph}>
