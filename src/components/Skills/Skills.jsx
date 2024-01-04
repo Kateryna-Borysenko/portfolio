@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import Paper from '../common/Paper/Paper';
 import { skills } from '../../data/skills';
 import s from './Skills.module.css';
@@ -17,25 +17,22 @@ const variants = {
 };
 
 const Skills = () => {
-  const [filteredSkills, setFilteredSkills] = useState(skills);
   const [activeButton, setActiveButton] = useState('all');
 
-  useEffect(() => {
-    if (activeButton === 'all') {
-      setFilteredSkills(
-        [...skills].sort((a, b) => a.name.localeCompare(b.name)),
-      );
-    } else {
-      setFilteredSkills(skills.filter(skill => skill.type === activeButton));
-    }
-  }, [activeButton]);
-
-  const skillTypes = skills.reduce((unique, skill) => {
-    if (!unique.includes(skill.type)) {
-      unique.push(skill.type);
-    }
-    return unique;
+  const skillTypes = useMemo(() => {
+    return skills.reduce((unique, skill) => {
+      if (!unique.includes(skill.type)) {
+        unique.push(skill.type);
+      }
+      return unique;
+    }, []);
   }, []);
+
+  const filteredSkills = useMemo(() => {
+    return activeButton === 'all'
+      ? [...skills].sort((a, b) => a.name.localeCompare(b.name))
+      : skills.filter(skill => skill.type === activeButton);
+  }, [activeButton]);
 
   return (
     <Paper>
@@ -72,7 +69,7 @@ const Skills = () => {
               custom={i}
             >
               <div className={s.img_container}>
-                <img src={path} alt={alt} />
+                <img src={path} alt={alt} loading="lazy" />
               </div>
               <div className={s.title}>{name}</div>
             </motion.div>
