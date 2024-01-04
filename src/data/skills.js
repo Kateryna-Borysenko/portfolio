@@ -27,6 +27,7 @@ import trello from '../images/skills/trello.png';
 import mongodb from '../images/skills/mongodb.png';
 import typeScript from '../images/skills/type-script.png';
 import webpack from '../images/skills/webpack.png';
+import framerMotion from '../images/skills/framer-motion.png';
 
 export const skills = [
   {
@@ -231,5 +232,12 @@ export const skills = [
     path: webpack,
     alt: 'Webpack Logo',
     type: 'Development Tools'
+  },
+  {
+    id: 30,
+    name: 'Framer Motion',
+    path: framerMotion,
+    alt: 'Framer Motion Logo',
+    type: 'Frameworks and Libraries'
   },
 ];
