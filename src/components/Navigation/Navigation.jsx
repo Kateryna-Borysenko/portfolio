@@ -4,12 +4,10 @@ import s from './Navigation.module.css';
 
 const Navigation = () => {
   return (
-    <nav>
-      <ul className={s.container}>
-        {navConfig.map(({ id, name, path }) => (
-          <NavItem key={id} name={name} to={path} />
-        ))}
-      </ul>
+    <nav className={s.container}>
+      {navConfig.map(({ id, name, path }) => (
+        <NavItem key={id} name={name} to={path} />
+      ))}
     </nav>
   );
 };
