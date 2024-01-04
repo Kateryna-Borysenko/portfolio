@@ -1,9 +1,8 @@
 import Logo from '../Logo/Logo';
 import Navigation from '../../Navigation/Navigation';
 import logo from '../../../images/logo.png';
-import s from './Header.module.css';
-
 import CellPhone from '../CellPhone/CellPhone';
+import s from './Header.module.css';
 
 const Header = () => {
   return (

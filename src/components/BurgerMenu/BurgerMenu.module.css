@@ -1,11 +1,9 @@
 .container {
-  padding: 80px;
-  outline: 1px solid red;
   display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  padding: 30px 60px;
-  gap: 20px;
+  margin-top: 80px;
+  padding: 30px 40px 30px 60px;
+  gap: 25px;
 }
 
 .sidebar {
@@ -13,12 +11,12 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  height: calc(100vh - 292px);
 }
 
 .bg {
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.719);
 }

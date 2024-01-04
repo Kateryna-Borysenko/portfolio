@@ -2,6 +2,10 @@
   position: relative;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-sizing: border-box;
+  text-transform: uppercase;
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1px;
 }
 
 .link::before {
