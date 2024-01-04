@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  height: calc(100vh - 292px);
+  width: 100%;
+  overflow: hidden;
+  outline: 1px solid red;
+}
+
+.sliding_text_container {
+  position: absolute;
+  width: 100%;
+  font-size: 15vh;
+  bottom: -50px;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.645);
+  font-weight: bold;
+}

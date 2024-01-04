@@ -44,6 +44,7 @@ const Carousel = ({ items }) => {
                 key={item.id}
                 src={item.imgSrc}
                 alt={item.alt}
+                loading="lazy"
                 style={{ maxWidth: item.width, height: 'auto' }}
                 className={`${s.carousel_image} ${
                   index === currentIndex ? s.active : ''

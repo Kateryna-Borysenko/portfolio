@@ -38,7 +38,7 @@ export const certificates = [
     url: GO_IT_URL,
     city: 'Kyiv',
     year: '2022',
-    duration: '6 months'
+    duration: '8 months'
 
   },
   {
