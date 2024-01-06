@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import { useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -11,23 +10,6 @@ import s from './AboutContent.module.css';
 
 const AboutContent = () => {
   const navigate = useNavigate();
-
-  const variants = {
-    initial: {
-      x: -300,
-      y: 50,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1.5,
-        staggerChildren: 0.1,
-      },
-    },
-  };
 
   const handleDownloadBtnClick = useCallback(() => {
     fetch(process.env.REACT_APP_CV_URL)
@@ -66,19 +48,13 @@ const AboutContent = () => {
             <div className={s.position}>Fullstack Developer</div>
             <h2 className={s.title}>Kateryna Borysenko</h2>
           </div>
-          <motion.div
-            className={s.btn_container}
-            variants={variants}
-            initial="initial"
-            ref={ref}
-            animate={'animate'}
-          >
+          <div className={s.btn_container}>
             <LightButton name="Download CV" onClick={handleDownloadBtnClick} />
             <LightButton
               name="Certificates"
               onClick={handleCertificateBtnClick}
             />
-          </motion.div>
+          </div>
         </div>
         <div className={s.bottom_container}>
           <section className={s.description_section}>

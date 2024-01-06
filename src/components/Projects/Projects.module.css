@@ -1,20 +1,34 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: relative;
-  height: calc(100vh - 292px);
   width: 100%;
-  overflow: hidden;
-  outline: 1px solid red;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-.sliding_text_container {
-  position: absolute;
-  width: 100%;
-  font-size: 15vh;
-  bottom: -50px;
-  white-space: nowrap;
-  color: rgba(255, 255, 255, 0.645);
-  font-weight: bold;
+.container::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: var(--ui-secondary);
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--ui-hover);
+}
+
+.title {
+  position: sticky;
+
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-h2);
+  text-transform: uppercase;
+  padding: 20px 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0)
+  );
 }
