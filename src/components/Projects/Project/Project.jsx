@@ -3,7 +3,7 @@ import Paper from '../../../components/common/Paper/Paper';
 import s from './Project.module.css';
 
 const Project = ({ item }) => {
-  const { path, title, desc, alt } = item;
+  const { path, title, desc, alt, techStack, codeLink, demoLink } = item;
   return (
     <section className={s.section}>
       <Paper>
@@ -18,30 +18,28 @@ const Project = ({ item }) => {
 
             <h3 className={s.tech_stack_title}>Main Stack :</h3>
             <ul className={s.tech_stack_list}>
-              <li className={s.tech_stack_item}>React</li>
-              <li className={s.tech_stack_item}>Redux</li>
-              <li className={s.tech_stack_item}>Type Script</li>
-              <li className={s.tech_stack_item}>Type Script</li>
-              <li className={s.tech_stack_item}>Type Script</li>
-              <li className={s.tech_stack_item}>Type Script</li>
-              <li className={s.tech_stack_item}>Type Script</li>
+              {techStack.map(item => (
+                <li key={item} className={s.tech_stack_item}>
+                  {item}
+                </li>
+              ))}
             </ul>
             <div className={s.btn_container}>
               <a
                 className={s.link}
-                href="https://github.com/Kateryna-Borysenko"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LightButton name="Demo" />
-              </a>
-              <a
-                className={s.link}
-                href="https://github.com/Kateryna-Borysenko"
+                href={codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <LightButton name="Code" />
+              </a>
+              <a
+                className={s.link}
+                href={demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LightButton name="Demo" />
               </a>
             </div>
           </div>
