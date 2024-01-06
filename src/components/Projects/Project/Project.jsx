@@ -15,11 +15,32 @@ const Project = ({ item }) => {
           <div className={s.text_container}>
             <h2 className={s.title}>{title}</h2>
             <p className={s.description}>{desc}</p>
+
+            <h3 className={s.tech_stack_title}>Main Stack :</h3>
+            <ul className={s.tech_stack_list}>
+              <li className={s.tech_stack_item}>React</li>
+              <li className={s.tech_stack_item}>Redux</li>
+              <li className={s.tech_stack_item}>Type Script</li>
+              <li className={s.tech_stack_item}>Type Script</li>
+              <li className={s.tech_stack_item}>Type Script</li>
+              <li className={s.tech_stack_item}>Type Script</li>
+              <li className={s.tech_stack_item}>Type Script</li>
+            </ul>
             <div className={s.btn_container}>
-              <a href="https://github.com/Kateryna-Borysenko">
+              <a
+                className={s.link}
+                href="https://github.com/Kateryna-Borysenko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LightButton name="Demo" />
               </a>
-              <a href="https://github.com/Kateryna-Borysenko">
+              <a
+                className={s.link}
+                href="https://github.com/Kateryna-Borysenko"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LightButton name="Code" />
               </a>
             </div>
