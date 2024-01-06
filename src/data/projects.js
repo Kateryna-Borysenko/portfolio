@@ -45,4 +45,34 @@ export const projects = [
     codeLink: '',
     demoLink: ''
   },
+  {
+    id: 5,
+    title: 'Vanilla JS App',
+    path: filmoteka,
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    alt: 'Project Logo',
+    techStack: ['React', 'React Testing Library'],
+    codeLink: '',
+    demoLink: ''
+  },
+  {
+    id: 6,
+    title: 'Vanilla JS App',
+    path: filmoteka,
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    alt: 'Project Logo',
+    techStack: ['React', 'React Testing Library'],
+    codeLink: '',
+    demoLink: ''
+  },
+  {
+    id: 7,
+    title: 'Vanilla JS App',
+    path: filmoteka,
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
+    alt: 'Project Logo',
+    techStack: ['React', 'React Testing Library'],
+    codeLink: '',
+    demoLink: ''
+  },
 ];

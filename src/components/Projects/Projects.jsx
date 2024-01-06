@@ -5,11 +5,21 @@ import s from './Projects.module.css';
 const Projects = () => {
   return (
     <div className={s.container}>
-      <div className={s.list}>
+      <h1 className={s.title}>Projects</h1>
+      <ul className={s.card_list}>
         {projects.map(item => (
-          <Project item={item} key={item.id} />
+          <li className={s.card_item}>
+            <div className={s.img_container}>
+              <img className={s.img} src={item.path} alt={item.alt} />
+              <p className={s.description}>{item.desc}</p>
+            </div>
+            <div className={s.card_caption}>
+              <h3 className={s.card_title}>{item.title}</h3>
+              <button className={s.card_button}> ... see more</button>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

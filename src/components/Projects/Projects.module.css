@@ -1,23 +1,101 @@
 .container {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 0;
+  text-align: center;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.card_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  height: 800px;
+  margin-top: 140px;
   overflow: scroll;
   overflow-x: hidden;
 }
 
-.container::-webkit-scrollbar {
+.card_list::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: var(--ui-secondary);
 }
 
-.container::-webkit-scrollbar-thumb {
+.card_list::-webkit-scrollbar-thumb {
   background: var(--ui-hover);
 }
 
-.list {
-  margin: 100px 0;
+.img_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(255, 166, 0);
+  background: linear-gradient(45deg, #9e9e9e, #e0a500 70%, #ffa500);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  gap: 100px;
+  align-items: center;
+  color: var(--text-inverse);
+}
+
+.card_item {
+  width: 370px;
+  background-color: var(--bg-primary);
+  border: 4px solid var(--bg-primary);
+  box-sizing: border-box;
+}
+
+.card_item:hover .description {
+  transform: translateY(0);
+}
+
+.card_caption {
+  padding: 20px 24px;
+}
+
+.card_title {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+.card_button {
+  padding: 8px 0px;
+  font-size: var(--font-size-button);
+  border: transparent;
+  background-color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card_button:hover {
+  color: var(--ui-hover);
 }
