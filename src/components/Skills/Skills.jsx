@@ -40,6 +40,7 @@ const Skills = () => {
         <div className={s.btn_container}>
           <button
             className={activeButton === 'all' ? s.active_button : s.button}
+            aria-label="all"
             onClick={() => setActiveButton('all')}
           >
             All Tech Skills
@@ -48,6 +49,7 @@ const Skills = () => {
             <button
               key={type}
               className={activeButton === type ? s.active_button : s.button}
+              aria-label={type}
               onClick={() => setActiveButton(type)}
             >
               {type}

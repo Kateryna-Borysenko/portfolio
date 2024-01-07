@@ -1,8 +1,8 @@
 import s from './LightButton.module.css';
 
-const LightButton = ({ name, onClick }) => {
+const LightButton = ({ name, onClick, ariaLabel }) => {
   return (
-    <button className={s.button} onClick={onClick}>
+    <button className={s.button} onClick={onClick} aria-label={ariaLabel}>
       {name}
     </button>
   );

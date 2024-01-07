@@ -40,7 +40,11 @@ const HeroBanner = () => {
               short call where we will get to know each other.
             </p>
             <div className={s.signature}>Kateryna Borysenko</div>
-            <Button name="Contact Me" onClick={handleClick} />
+            <Button
+              name="Contact Me"
+              ariaLabel="Contact Me"
+              onClick={handleClick}
+            />
           </div>
           <div className={s.img_container}>
             <img

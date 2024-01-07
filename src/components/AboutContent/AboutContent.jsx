@@ -1,5 +1,5 @@
 import { toast } from 'react-toastify';
-import { useCallback, useRef } from 'react';
+import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Paper from '../common/Paper/Paper';
 import LightButton from '../../uikit/LightButton/LightButton';
@@ -38,8 +38,6 @@ const AboutContent = () => {
     navigate('/certificates');
   };
 
-  const ref = useRef();
-
   return (
     <Paper>
       <div className={s.container}>
@@ -49,9 +47,14 @@ const AboutContent = () => {
             <h2 className={s.title}>Kateryna Borysenko</h2>
           </div>
           <div className={s.btn_container}>
-            <LightButton name="Download CV" onClick={handleDownloadBtnClick} />
+            <LightButton
+              name="Download CV"
+              ariaLabel="Download CV"
+              onClick={handleDownloadBtnClick}
+            />
             <LightButton
               name="Certificates"
+              ariaLabel="Certificates"
               onClick={handleCertificateBtnClick}
             />
           </div>
