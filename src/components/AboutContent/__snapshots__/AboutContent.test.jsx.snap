@@ -27,14 +27,15 @@ exports[`AboutContent renders correctly and matches snapshot 1`] = `
         </div>
         <div
           class="btn_container"
-          style="opacity: 0; transform: translateX(-300px) translateY(50px) translateZ(0);"
         >
           <button
+            aria-label="Download CV"
             class="button"
           >
             Download CV
           </button>
           <button
+            aria-label="Certificates"
             class="button"
           >
             Certificates
