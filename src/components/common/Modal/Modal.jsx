@@ -31,7 +31,7 @@ const Modal = ({ onClose, title, children }) => {
         <header className={s.header}>
           <button
             type="button"
-            className={s.closeBtn}
+            className={s.close_btn}
             onClick={onClose}
             aria-label="Close"
           >
@@ -39,13 +39,7 @@ const Modal = ({ onClose, title, children }) => {
           </button>
         </header>
 
-        <div className={s.content}>
-          <div className={s.lead}>
-            <h3 className={s.title}>{title}</h3>
-          </div>
-
-          {children}
-        </div>
+        <div className={s.content}>{children}</div>
       </div>
     </div>,
     modalRootRef,
