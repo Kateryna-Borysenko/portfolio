@@ -35,7 +35,10 @@ const Projects = () => {
         ))}
       </ul>
       {selectedProject && (
-        <Modal onClose={() => setSelectedProject(null)}>
+        <Modal
+          onClose={() => setSelectedProject(null)}
+          data-testid="mock-modal"
+        >
           <Project item={selectedProject} />
         </Modal>
       )}

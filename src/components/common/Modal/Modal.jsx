@@ -4,7 +4,7 @@ import s from './Modal.module.css';
 
 const modalRootRef = document.querySelector('#modal-root');
 
-const Modal = ({ onClose, title, children }) => {
+const Modal = ({ onClose, children }) => {
   useEffect(() => {
     const onEscPress = e => {
       if (e.code === 'Escape') {
@@ -24,7 +24,6 @@ const Modal = ({ onClose, title, children }) => {
       onClose();
     }
   };
-
   return createPortal(
     <div className={s.backdrop} onClick={handleBackdropClick}>
       <div className={s.modal}>
