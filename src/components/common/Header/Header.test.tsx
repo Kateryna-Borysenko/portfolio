@@ -19,7 +19,6 @@ describe('Header Component', () => {
       'Skills',
       'Projects',
       'Certificates',
-      'Feedbacks',
       'Contacts',
     ];
     navItems.forEach(item => {

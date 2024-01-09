@@ -10,7 +10,6 @@ describe('Testing Project Component', () => {
     title: 'Portfolio React App',
     path: portfolio,
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.',
-    alt: 'Project Logo',
     techStack: ['React', 'Redux', 'Type Script', 'React Testing Library'],
     codeLink: '',
     demoLink: '',
@@ -25,7 +24,6 @@ describe('Testing Project Component', () => {
 
     expect(screen.getByText(mockItem.title)).toBeInTheDocument();
     expect(screen.getByText(mockItem.desc)).toBeInTheDocument();
-    expect(screen.getByAltText(mockItem.alt)).toBeInTheDocument();
   });
 
   test('links open correctly', () => {

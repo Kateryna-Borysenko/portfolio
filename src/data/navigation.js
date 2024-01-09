@@ -21,11 +21,6 @@ export const navConfig = [{
 },
 {
   id: 6,
-  name: "Feedbacks",
-  path: "/feedbacks",
-},
-{
-  id: 7,
   name: "Contacts",
   path: "/contacts",
 },]

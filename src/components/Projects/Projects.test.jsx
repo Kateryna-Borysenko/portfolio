@@ -25,7 +25,7 @@ describe('Projects Component', () => {
     render(<Projects />);
     projects.forEach(project => {
       expect(screen.getByText(project.title)).toBeInTheDocument();
-      const images = screen.getAllByAltText(project.alt);
+      const images = screen.getAllByAltText(project.title);
       expect(images.length).toBeGreaterThan(0);
     });
   });

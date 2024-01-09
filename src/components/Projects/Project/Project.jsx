@@ -3,13 +3,13 @@ import Paper from '../../../components/common/Paper/Paper';
 import s from './Project.module.css';
 
 const Project = ({ item }) => {
-  const { path, title, desc, alt, techStack, codeLink, demoLink } = item;
+  const { path, title, desc, techStack, codeLink, demoLink } = item;
   return (
     <section className={s.section}>
       <Paper>
         <div className={s.container}>
           <div className={s.img_container}>
-            <img className={s.img} src={path} alt={alt} />
+            <img className={s.img} src={path} alt={title} />
           </div>
 
           <div className={s.text_container}>
