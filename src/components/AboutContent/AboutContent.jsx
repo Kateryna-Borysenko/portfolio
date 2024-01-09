@@ -92,7 +92,7 @@ const AboutContent = () => {
               </span>
             </p>
           </section>
-          <section className={s.quote_section}>
+          <section className={s.image_section}>
             <img className={s.image} src={img} alt="Developer" loading="lazy" />
           </section>
           <section className={s.experience_section}>

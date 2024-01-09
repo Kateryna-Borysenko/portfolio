@@ -44,19 +44,16 @@
   font-weight: var(--font-weight-bold);
 }
 
-.img_container {
-  background-color: var(--bg-primary);
+.image_container {
   width: 45%;
-  height: 100%;
-  padding: 3px;
+  background: linear-gradient(45deg, #808080, #ffa500);
+  border: 4px solid var(--bg-primary);
   box-sizing: border-box;
 }
 
-.img {
-  min-width: 345px;
-  min-height: 356px;
-  background-image: url('../../images/bg.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.image {
+  /* position: absolute;
+  width: 76%;
+  bottom: 3px;
+  left: 280px; */
 }

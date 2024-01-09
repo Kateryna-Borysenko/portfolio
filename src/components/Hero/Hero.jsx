@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../uikit/Button/Button';
-import image from '../../images/hero-img.png';
+import image from '../../images/hero.png';
 import Paper from '../common/Paper/Paper';
 import s from './Hero.module.css';
 
@@ -46,11 +46,11 @@ const HeroBanner = () => {
               onClick={handleClick}
             />
           </div>
-          <div className={s.img_container}>
+          <div className={s.image_container}>
             <img
-              className={s.img}
+              className={s.image}
               src={image}
-              alt="Developer Logo"
+              alt="Developer"
               loading="lazy"
             />
           </div>
