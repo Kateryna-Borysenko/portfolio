@@ -84,7 +84,7 @@ exports[`AboutContent renders correctly and matches snapshot 1`] = `
           </p>
         </section>
         <section
-          class="quote_section"
+          class="image_section"
         >
           <img
             alt="Developer"

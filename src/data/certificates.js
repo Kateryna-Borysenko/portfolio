@@ -1,6 +1,6 @@
 import frontendInfopulseCertificate from "../images/certificates/infopulse.jpg";
 import englishPrimeCertificate from "../images/certificates/english.jpeg";
-import fullstackGoItCertificate from "../images/certificates/fullstack-goit.jpeg";
+import fullstackGoItCertificate from "../images/certificates/fullstack.jpeg";
 import designAlpacaSchoolCertificate from "../images/certificates/design.png";
 
 import { INFOPULSE_UNIVER_URL, ENGLISH_PRIME_SCHOOL_URL, GO_IT_URL, ALPACA_SCHOOL_URL } from '../utils/urls'
