@@ -1,4 +1,5 @@
 :global(.global_container) {
+  outline: 2px solid yellowgreen;
   display: flex;
   align-items: center;
   justify-content: center;
