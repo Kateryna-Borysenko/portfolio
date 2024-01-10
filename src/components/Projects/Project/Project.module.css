@@ -2,7 +2,7 @@
   display: flex;
   align-items: f;
   margin: 0 auto;
-  width: 90%;
+  max-width: 90%;
 }
 
 .container {
@@ -49,7 +49,7 @@
 
 .link {
   display: block;
-  width: 190px;
+  width: 160px;
 }
 
 .btn_container {

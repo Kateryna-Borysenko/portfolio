@@ -14,21 +14,18 @@ const Projects = () => {
 
   return (
     <div className={s.container}>
-      <h1 className={s.title}>
-        <span className={s.span}>You can explore additional</span>Projects
-        <span className={s.span}>
-          on my{' '}
-          <a
-            className={s.github_link}
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-          .
-        </span>
-      </h1>
+      <h2 className={s.title}>
+        You can explore additional projects on my
+        <a
+          className={s.github_link}
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        .
+      </h2>
 
       <ul className={s.card_list}>
         {projects.map(item => (
@@ -52,10 +49,7 @@ const Projects = () => {
       </ul>
 
       {selectedProject && (
-        <Modal
-          onClose={() => setSelectedProject(null)}
-          data-testid="mock-modal"
-        >
+        <Modal onClose={() => setSelectedProject(null)}>
           <Project item={selectedProject} />
         </Modal>
       )}

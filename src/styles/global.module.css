@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 292px);
+  height: calc(100vh - 272px);
   padding: 0 30px;
   box-sizing: border-box;
 }

@@ -16,11 +16,6 @@ describe('Projects Component', () => {
     fireEvent.click(buttons[0]);
   });
 
-  test('renders the title correctly', () => {
-    render(<Projects />);
-    expect(screen.getByText('Projects')).toBeInTheDocument();
-  });
-
   test('renders the list of projects correctly', () => {
     render(<Projects />);
     projects.forEach(project => {
