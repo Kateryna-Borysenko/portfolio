@@ -42,3 +42,43 @@
 .name:hover {
   color: var(--ui-hover);
 }
+
+@media screen and (max-width: 960px) {
+  .container {
+    padding: 0;
+    top: 140px;
+    left: 40px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .socials_list {
+    display: flex;
+    gap: 10px;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .item {
+    width: 30px;
+    margin: 0;
+  }
+
+  .item:nth-child(2) {
+    margin-top: 4px;
+  }
+
+  .item:nth-child(3) {
+    margin-top: 4px;
+  }
+
+  .item:nth-child(4) {
+    margin-top: -6px;
+  }
+}
