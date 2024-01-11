@@ -74,6 +74,7 @@
 }
 
 body {
+  padding-top: 0;
   margin: 0;
   font-family: var(--text-primary);
   -webkit-font-smoothing: antialiased;
@@ -81,12 +82,6 @@ body {
   background-color: var(--bg-primary);
   font-size: var(--font-size-body);
   line-height: var(--line-height-normal);
-}
-
-@media screen and (min-width: 1440px) {
-  body {
-    padding-top: 80px;
-  }
 }
 
 h1,

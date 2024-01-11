@@ -1,6 +1,6 @@
 import frontendInfopulseCertificate from "../images/certificates/infopulse.jpg";
 import englishPrimeCertificate from "../images/certificates/english.jpeg";
-import fullstackGoItCertificate from "../images/certificates/fullstack.jpeg";
+import fullstackGoItCertificate from "../images/certificates/fullstack.jpg";
 import designAlpacaSchoolCertificate from "../images/certificates/design.png";
 
 import { INFOPULSE_UNIVER_URL, ENGLISH_PRIME_SCHOOL_URL, GO_IT_URL, ALPACA_SCHOOL_URL } from '../utils/urls'
@@ -33,7 +33,7 @@ export const certificates = [
     id: 3,
     imgSrc: fullstackGoItCertificate,
     alt: 'Fullstack Developer Certificate',
-    width: '520px',
+    width: '746px',
     title: 'Go It Bootcamp',
     url: GO_IT_URL,
     city: 'Kyiv',
