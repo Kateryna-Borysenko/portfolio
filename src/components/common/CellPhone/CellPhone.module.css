@@ -7,3 +7,9 @@
   font-size: var(--font-size-button);
   color: var(--ui-hover);
 }
+
+@media screen and (max-width: 960px) {
+  .container {
+    display: none;
+  }
+}

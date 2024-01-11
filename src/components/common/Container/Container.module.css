@@ -13,9 +13,14 @@
   }
 }
 
-/* @media screen and (max-width: px) {
+@media screen and (max-width: 1024px) {
   .container {
-    
+    max-width: 1024px;
   }
-  
-} */
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    max-width: 860px;
+  }
+}

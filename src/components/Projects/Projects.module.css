@@ -35,8 +35,8 @@
   gap: 20px;
   width: 100%;
   margin-top: 100px;
-  overflow-y: auto;
-  max-height: 902px;
+  /* overflow-y: auto; */
+  height: 902px;
 }
 
 .card_list::-webkit-scrollbar {
@@ -116,5 +116,11 @@
   }
   .card_list {
     margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card_list {
+    padding-bottom: 180px;
   }
 }

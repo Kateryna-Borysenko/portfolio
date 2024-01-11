@@ -27,3 +27,15 @@
 .link:not(:last-child) {
   margin-right: 30px;
 }
+
+@media screen and (max-width: 1170px) {
+  .link:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .link:not(:last-child) {
+    margin-right: 0;
+  }
+}
