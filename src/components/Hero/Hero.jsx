@@ -57,14 +57,14 @@ const HeroBanner = () => {
         </Paper>
       </div>
 
-      {/* <motion.div
+      <motion.div
         className={s.sliding_text_container}
         variants={sliderVariants}
         initial="initial"
         animate="animate"
       >
         Fullstack Developer
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 };

@@ -1,9 +1,14 @@
 :global(.global_container) {
-  outline: 2px solid yellowgreen;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 272px);
-  padding: 0 30px;
+  min-height: calc(100vh - 272px);
+  padding: 0px 30px;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1880px), screen and (max-height: 1080px) {
+  :global(.global_container) {
+    height: auto;
+  }
 }

@@ -1,23 +1,23 @@
 .container {
   position: relative;
+  padding-bottom: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: calc(100vh - 292px);
   overflow: hidden;
 }
 
 .hero_container {
-  width: 900px;
+  width: 1020px;
 }
 
 .sliding_text_container {
+  position: absolute;
+  bottom: 0;
   margin: 0;
   padding: 0;
-  position: absolute;
   font-size: 150px;
-  bottom: 0;
   white-space: nowrap;
   color: rgba(255, 255, 255, 0.548);
   font-weight: var(--font-weight-bold);
@@ -56,4 +56,14 @@
   width: 76%;
   bottom: 3px;
   left: 280px; */
+}
+
+@media screen and (max-width: 1440px), screen and (max-height: 1080px) {
+  .container {
+    padding-bottom: 120px;
+  }
+
+  .sliding_text_container {
+    font-size: 100px;
+  }
 }

@@ -8,7 +8,7 @@
 
 .title {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   right: 0;
   padding: 20px 0;
@@ -34,7 +34,7 @@
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 100px;
   overflow-y: auto;
   max-height: 902px;
 }
@@ -102,4 +102,10 @@
 
 .card_button:hover {
   color: var(--ui-hover);
+}
+
+@media screen and (max-height: 1190px), screen and (max-width: 1165px) {
+  .container {
+    /* max-width: 950px; */
+  }
 }

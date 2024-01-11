@@ -5,8 +5,18 @@
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 1880px) {
-  .container {
+
+@media screen and (max-height: 1080px), screen and (max-width: 1080px) {
+  /* .container {
     max-width: 1440px;
-  }
+  } */
 }
+
+/* @media screen and (max-width: px) {
+  .container {
+    
+  }
+  
+} */
+
+/* background-image: none; */
