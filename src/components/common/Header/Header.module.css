@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
   background-color: var(--bg-primary);
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
 }

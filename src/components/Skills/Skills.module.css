@@ -26,7 +26,7 @@
 
 .list {
   max-width: 1020px;
-  max-height: 372px;
+  height: 372px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -70,15 +70,12 @@
   font-size: var(--font-size-caption);
 }
 
-/* @media screen and (max-height: 1190px), screen and (max-width: 1165px) {
-  .container {
-    max-width: 950px;
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    padding: 40px 0;
   }
 
-  .button {
-    width: calc(950px / 6);
-  }
   .list {
     height: auto;
   }
-} */
+}

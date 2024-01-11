@@ -35,50 +35,52 @@ const Skills = () => {
   }, [activeButton]);
 
   return (
-    <Paper>
-      <div className={s.container}>
-        <div className={s.btn_container}>
-          <button
-            className={activeButton === 'all' ? s.active_button : s.button}
-            aria-label="all"
-            onClick={() => setActiveButton('all')}
-          >
-            All Tech Skills
-          </button>
-          {skillTypes.map(type => (
+    <div className={s.wrapper}>
+      <Paper>
+        <div className={s.container}>
+          <div className={s.btn_container}>
             <button
-              key={type}
-              className={activeButton === type ? s.active_button : s.button}
-              aria-label={type}
-              onClick={() => setActiveButton(type)}
+              className={activeButton === 'all' ? s.active_button : s.button}
+              aria-label="all"
+              onClick={() => setActiveButton('all')}
             >
-              {type}
+              All Tech Skills
             </button>
-          ))}
+            {skillTypes.map(type => (
+              <button
+                key={type}
+                className={activeButton === type ? s.active_button : s.button}
+                aria-label={type}
+                onClick={() => setActiveButton(type)}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
+          <motion.div
+            key={activeButton}
+            className={s.list}
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+          >
+            {filteredSkills.map(({ id, name, path, alt }, i) => (
+              <motion.div
+                key={id}
+                className={s.item}
+                variants={variants}
+                custom={i}
+              >
+                <div className={s.img_container}>
+                  <img src={path} alt={alt} loading="lazy" />
+                </div>
+                <div className={s.title}>{name}</div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
-        <motion.div
-          key={activeButton}
-          className={s.list}
-          initial="hidden"
-          animate="visible"
-          variants={variants}
-        >
-          {filteredSkills.map(({ id, name, path, alt }, i) => (
-            <motion.div
-              key={id}
-              className={s.item}
-              variants={variants}
-              custom={i}
-            >
-              <div className={s.img_container}>
-                <img src={path} alt={alt} loading="lazy" />
-              </div>
-              <div className={s.title}>{name}</div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </Paper>
+      </Paper>
+    </div>
   );
 };
 

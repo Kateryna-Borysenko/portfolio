@@ -6,7 +6,7 @@ import s from './Header.module.css';
 
 const Header = () => {
   return (
-    <header>
+    <header className={s.header}>
       <div className={s.container}>
         <Logo logo={logo} />
         <Navigation />

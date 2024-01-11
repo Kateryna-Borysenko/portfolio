@@ -60,7 +60,8 @@
 
 @media screen and (max-width: 1440px), screen and (max-height: 1080px) {
   .container {
-    padding-bottom: 120px;
+    margin-top: 40px;
+    padding-bottom: 115px;
   }
 
   .sliding_text_container {
