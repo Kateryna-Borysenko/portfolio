@@ -6,7 +6,7 @@ import s from './Carousel.module.css';
 const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
+  // const [isPaused, setIsPaused] = useState(false);
 
   const currentItem = items[currentIndex];
 
@@ -23,18 +23,18 @@ const Carousel = ({ items }) => {
     goToSlide(currentIndex === items.length - 1 ? 0 : currentIndex + 1);
   }, [currentIndex, items.length, goToSlide]);
 
-  useEffect(() => {
-    if (!isPaused) {
-      const interval = setInterval(goToNext, 3000);
-      return () => clearInterval(interval);
-    }
-  }, [currentIndex, isPaused, goToNext]);
+  // useEffect(() => {
+  //   if (!isPaused) {
+  //     const interval = setInterval(goToNext, 3000);
+  //     return () => clearInterval(interval);
+  //   }
+  // }, [currentIndex, isPaused, goToNext]);
 
   return (
     <div
       className={s.container}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      // onMouseEnter={() => setIsPaused(true)}
+      // onMouseLeave={() => setIsPaused(false)}
     >
       <Paper>
         <div className={s.carousel_container}>
