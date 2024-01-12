@@ -87,12 +87,15 @@
     flex-wrap: wrap;
     align-items: start;
   }
+
   .description_section {
     width: 100%;
   }
+
   .image {
     left: -200px;
   }
+
   .experience_section {
     width: 40%;
   }
@@ -118,6 +121,7 @@
   .title_container {
     width: 55%;
   }
+
   .btn_container {
     width: 45%;
   }
@@ -145,8 +149,20 @@
     left: 0;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-top: 175px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .wrapper {
     padding: 15px;
+  }
+
+  .image_section {
+    width: 250px;
+    height: 330px;
   }
 }
