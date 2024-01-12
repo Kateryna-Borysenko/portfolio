@@ -7,8 +7,14 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1880px), screen and (max-height: 1080px) {
+@media screen and (max-width: 960px) {
   :global(.global_container) {
-    height: auto;
+    min-height: calc(100vh - 265px);
+  }
+
+  @media screen and (max-width: 1880px), screen and (max-height: 1080px) {
+    :global(.global_container) {
+      height: auto;
+    }
   }
 }

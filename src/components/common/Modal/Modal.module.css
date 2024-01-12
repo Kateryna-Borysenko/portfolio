@@ -24,8 +24,10 @@
 }
 
 .close_btn {
+  position: absolute;
+  top: -50px;
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   color: var(--text-inverse);
   border: none;
   background: none;
