@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ToggleButton from './ToggleButton/ToggleButton';
 import NavItem from '../Navigation/NavItem/NavItem';
@@ -29,6 +29,23 @@ const variants = {
 
 const BurgerMenu = () => {
   const [isOpen, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleOutsideClick = event => {
+      if (
+        !event.target.closest(`.${s.sidebar}`) &&
+        !event.target.closest(`.${s.button}`)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, []);
 
   return (
     <motion.div className={s.sidebar} animate={isOpen ? 'open' : 'closed'}>
