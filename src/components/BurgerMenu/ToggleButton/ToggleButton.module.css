@@ -2,6 +2,7 @@
   .button {
     z-index: 999;
     position: fixed;
+    margin-top: 5px;
     top: 25px;
     right: 25px;
     background-color: transparent;

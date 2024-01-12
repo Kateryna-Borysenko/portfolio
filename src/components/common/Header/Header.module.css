@@ -1,16 +1,27 @@
+.header {
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: var(--bg-primary);
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-primary);
-  padding: 0 15px;
 }
 
 @media screen and (max-width: 1440px) {
   .header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 100;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 15px;
   }
 }
