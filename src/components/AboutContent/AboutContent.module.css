@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 1440px) {
   .wrapper {
-    padding: 70px;
+    padding: 70px 0;
   }
 }
 
@@ -98,5 +98,55 @@
   }
 }
 
-/* @media screen and (max-width: 900px) {
-}  */
+@media screen and (max-width: 900px) {
+  .image {
+    display: none;
+    /* !подставить нужную  */
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .image_section {
+    margin: 0 auto;
+  }
+  .experience_section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .title_container {
+    width: 55%;
+  }
+  .btn_container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding: 30px 0;
+  }
+
+  .container {
+    padding-top: 150px;
+  }
+
+  .title_container {
+    width: 100%;
+  }
+
+  .btn_container {
+    position: absolute;
+    justify-content: center;
+    width: 80%;
+    margin: 0 30px;
+    top: 150px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  .wrapper {
+    padding: 15px;
+  }
+}

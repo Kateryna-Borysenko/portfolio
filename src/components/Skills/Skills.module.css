@@ -92,3 +92,18 @@
     width: calc(1170px / 3);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .btn_container {
+    width: calc(1170px / 4);
+    margin: 0 auto 20px;
+  }
+  .item {
+    width: 118px;
+    height: 118px;
+  }
+
+  .title {
+    display: none;
+  }
+}
