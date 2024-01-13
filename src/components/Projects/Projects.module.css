@@ -35,8 +35,7 @@
   gap: 20px;
   width: 100%;
   margin-top: 100px;
-  /* overflow-y: auto; */
-  height: 902px;
+  height: auto;
 }
 
 .card_list::-webkit-scrollbar {
@@ -122,5 +121,37 @@
 @media screen and (max-width: 1023px) {
   .card_list {
     padding-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    top: 25px;
+    font-size: 27px;
+  }
+
+  .card_list {
+    margin-top: 90px;
+  }
+
+  .card_caption {
+    flex-direction: column;
+  }
+
+  .card_title {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .title {
+    top: 0;
+    font-size: 27px;
+  }
+
+  .card_list {
+    margin-top: 130px;
   }
 }
