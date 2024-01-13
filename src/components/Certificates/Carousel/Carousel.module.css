@@ -97,3 +97,19 @@
 .title:hover {
   color: var(--ui-hover);
 }
+
+@media screen and (max-width: 740px) {
+  .title {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .carousel_image_container {
+    /* margin-bottom: 10px; */
+  }
+
+  .info_block {
+    /* margin-top: 10px; */
+  }
+}

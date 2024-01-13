@@ -40,16 +40,20 @@ const Carousel = ({ items }) => {
         <div className={s.carousel_container}>
           <div className={s.carousel_image_container}>
             {items.map((item, index) => (
-              <img
-                key={item.id}
-                src={item.imgSrc}
-                alt={item.alt}
-                loading="lazy"
-                style={{ maxWidth: item.width, height: 'auto' }}
-                className={`${s.carousel_image} ${
-                  index === currentIndex ? s.active : ''
-                } ${isTransitioning ? s.transitioning : ''}`}
-              />
+              <picture key={item.id}>
+                <source media="(max-width: 602px)" srcSet={item.imgSrc_s} />
+                <source media="(max-width: 740px)" srcSet={item.imgSrc_m} />
+                <source srcSet={item.imgSrc} />
+                <img
+                  src={item.imgSrc}
+                  alt={item.alt}
+                  loading="lazy"
+                  style={{ maxWidth: item.width, height: 'auto' }}
+                  className={`${s.carousel_image} ${
+                    index === currentIndex ? s.active : ''
+                  } ${isTransitioning ? s.transitioning : ''}`}
+                />
+              </picture>
             ))}
           </div>
 

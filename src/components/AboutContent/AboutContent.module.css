@@ -112,6 +112,7 @@
   .image_section {
     margin: 0 auto;
   }
+
   .experience_section {
     width: 100%;
   }
@@ -157,12 +158,21 @@
 }
 
 @media screen and (max-width: 420px) {
-  .wrapper {
-    padding: 15px;
+  .btn_container {
+    margin: 0;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .image_section {
     width: 250px;
     height: 330px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    padding-top: 140px;
   }
 }

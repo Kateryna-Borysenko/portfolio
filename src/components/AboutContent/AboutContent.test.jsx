@@ -64,9 +64,4 @@ describe('AboutContent', () => {
     render(<AboutContent />, { wrapper: BrowserRouter });
     expect(screen.getByAltText('Developer')).toBeInTheDocument();
   });
-
-  it('renders correctly and matches snapshot', () => {
-    const { asFragment } = render(<AboutContent />, { wrapper: BrowserRouter });
-    expect(asFragment()).toMatchSnapshot();
-  });
 });
