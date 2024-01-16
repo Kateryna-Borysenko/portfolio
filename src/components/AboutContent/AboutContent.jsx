@@ -66,6 +66,7 @@ const AboutContent = () => {
                 <span className={s.accent}>
                   Hey, that's my name up there.
                   <ArrowIcon className={s.arrow_icon} />
+                  <br />
                 </span>
                 I'm a Fullstack Developer with a rich two-year experience in
                 creating dynamic web applications. Originally from the
