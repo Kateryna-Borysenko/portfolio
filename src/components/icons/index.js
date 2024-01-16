@@ -1,6 +1,7 @@
 export { ReactComponent as ArrowIcon } from "../../uikit/static/arrow.svg";
 export { ReactComponent as ForwardArrowIcon } from "../../uikit/static/arrow_left.svg";
 export { ReactComponent as BackArrowIcon } from "../../uikit/static/arrow_right.svg";
+export { ReactComponent as TopArrowIcon } from "../../uikit/static/arrow_to_top.svg";
 
 export { ReactComponent as LineIcon } from "../../uikit/static/line.svg";
 

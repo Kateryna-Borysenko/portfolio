@@ -118,12 +118,6 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .card_list {
-    padding-bottom: 180px;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .title {
     top: 25px;
