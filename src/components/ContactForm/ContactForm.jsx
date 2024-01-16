@@ -1,6 +1,6 @@
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import s from './ContactForm.module.css';
@@ -17,6 +17,7 @@ import {
 import { schema } from './schema';
 
 const ContactForm = () => {
+  const formRef = useRef();
   const { register, handleSubmit, formState, reset } = useForm({
     resolver: yupResolver(schema),
   });
@@ -29,16 +30,25 @@ const ContactForm = () => {
     setMessageLength(length);
   };
 
-  const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
-  const onSubmit = async data => {
+  const onSubmit = async (data, e) => {
+    e.preventDefault();
     try {
-      await axios.post(`${SERVER_URL}/send-email`, data);
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        formRef.current,
+        PUBLIC_KEY,
+      );
+
       toast.success('Message sent successfully!');
       setMessageLength(0);
       reset();
     } catch (error) {
-      toast.error('Failed to send message!');
+      toast.error('Failed to send message!', error);
     }
   };
 
@@ -47,7 +57,7 @@ const ContactForm = () => {
       <Paper>
         <div>
           <h1 className={s.title}>Let's have a chat</h1>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form ref={formRef} onSubmit={handleSubmit(onSubmit)}>
             <div className={s.form}>
               <label className={s.label}>
                 YOUR NAME
