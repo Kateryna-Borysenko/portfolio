@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../uikit/Button/Button';
-import image from '../../images/hero.png';
+import image from '../../images/hero.jpg';
 import Paper from '../common/Paper/Paper';
 import s from './Hero.module.css';
 
@@ -28,23 +28,25 @@ const HeroBanner = () => {
 
   return (
     <div className={s.container}>
-      <div className={s.hero_container}>
-        <Paper>
+      <Paper>
+        <div className={s.hero_container}>
           <div className={s.content_container}>
             <h1 className={s.title}>
-              Manifesting <br /> bold imaginations
-              <br /> into remarkable results.
+              Manifesting <br className={s.br} /> bold imaginations
+              <br className={s.br} /> into remarkable results.
             </h1>
             <p className={s.quote}>
               Every journey starts with small decision. For us it will be a
               short call where we will get to know each other.
             </p>
             <div className={s.signature}>Kateryna Borysenko</div>
-            <Button
-              name="Contact Me"
-              ariaLabel="Contact Me"
-              onClick={handleClick}
-            />
+            <div className={s.button_container}>
+              <Button
+                name="Contact Me"
+                ariaLabel="Contact Me"
+                onClick={handleClick}
+              />
+            </div>
           </div>
           <div className={s.image_container}>
             <img
@@ -54,8 +56,8 @@ const HeroBanner = () => {
               loading="lazy"
             />
           </div>
-        </Paper>
-      </div>
+        </div>
+      </Paper>
 
       <motion.div
         className={s.sliding_text_container}
@@ -63,7 +65,7 @@ const HeroBanner = () => {
         initial="initial"
         animate="animate"
       >
-        Fullstack Developer
+        Front End Developer
       </motion.div>
     </div>
   );
