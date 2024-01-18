@@ -1,55 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
 
 :root {
-  /* Цвета бренда */
-  --brand-deep-charcoal: #282626ff; /* Глубокий Шаркоал - насыщенный темно-серый, почти черный цвет */
-  --brand-light-brown: #b5845d; /* Тёплый светло-коричневый */
-  --brand-rich-mahogany: #4e2422ff; /* Богатый Махагон - глубокий коричнево-красный цвет */
-  --brand-dark-maroon: #372827ff; /* Темно-Бордовый - темный, насыщенный оттенок красно-коричневого */
-  --brand-navy-blue: #1e2d44ff; /* Темно-Синий - глубокий и интенсивный синий цвет */
-  --brand-burnt-sienna: #b2492cff; /* Обожженная Сиена - яркий x  и насыщенный ржаво-красный цвет */
-  --brand-smoky-gray: #a5887a; /* Дымчатый Серый - средний оттенок серого с нотками коричневого */
-  --brand-onyx-black: #393836ff; /* Ониксовый Черный - очень темный оттенок серого, почти черный */
-  --brand-light-mocha: #a59f9dff; /* Светлый Мокко - теплый, светло-коричневый цвет */
-
-  /* Цвета интерфейса пользователя */
-
+  --brand-deep-charcoal: #282626ff;
+  --brand-light-brown: #b5845d;
+  --brand-rich-mahogany: #4e2422ff;
+  --brand-dark-maroon: #372827ff;
+  --brand-navy-blue: #1e2d44ff;
+  --brand-burnt-sienna: #b2492cff;
+  --brand-smoky-gray: #a5887a;
+  --brand-onyx-black: #393836ff;
   --ui-active: #b2492cff;
   --ui-hover: #b5845d;
   --btn-hover: #494848;
-  --ui-primary: #262626; /* Основной цвет интерфейса: очень темно-серый */
-  --ui-secondary: #757575; /* Второстепенный цвет интерфейса: средне-серый */
-  --ui-tertiary: #f1f1f1; /* Третичный цвет интерфейса: очень светло-серый */
-  --ui-quaternary: #ffffff; /* Четвертичный цвет интерфейса: белый */
-  --ui-disabled: #dedede; /* Цвет для неактивных элементов: светло-серый */
-  --ui-error: #c60e0e; /* Цвет для ошибок: красно-оранжевый */
-  --ui-success: #138000; /* Цвет для успешных действий: темно-зеленый */
+  --ui-primary: #262626;
+  --ui-secondary: #757575;
+  --ui-tertiary: #f1f1f1;
+  --ui-quaternary: #ffffff;
+  --ui-disabled: #dedede;
+  --ui-error: #c60e0e;
+  --ui-success: #138000;
 
-  /* Цвета фона */
-  --bg-primary: #ffffff; /* Основной цвет фона: белый */
-  --bg-secondary: #e4e2d3; /* Второстепенный цвет фона: очень светло-серый */
-  --bg-tertiary: #282626ff; /* Третичный цвет фона: очень светло-бежевый */
+  --bg-primary: #ffffff;
+  --bg-secondary: #e4e2d3;
+  --bg-tertiary: #282626ff;
 
-  /* Цвета текста */
-  --text-primary: #282626ff; /* Основной цвет текста: очень темно-серый */
-  --text-secondary: #757575; /* Второстепенный цвет текста: средне-серый */
-  --text-disabled: #9c9c9c; /* Цвет для неактивного текста: темно-серый */
-  --text-inverse: #ffffff; /* Инверсный цвет текста: белый */
-  --text-error: #c60e0e; /* Цвет текста для ошибок: глубокий красный */
-  --text-success: #138000; /* Цвет текста для успешных действий: темно-зеленый */
+  --text-primary: #282626ff;
+  --text-secondary: #757575;
+  --text-disabled: #9c9c9c;
+  --text-inverse: #ffffff;
+  --text-error: #c60e0e;
+  --text-success: #138000;
 
-  /* Определение семейств шрифтов */
   --font-body: 'Open Sans', sans-serif;
   --font-heading: 'Roboto Slab', serif;
   --font-signature: 'Dancing Script', cursive;
 
-  /* Определение веса шрифтов */
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  /* Определение размеров шрифтов */
   --font-size-caption: 14px;
   --font-size-button: 16px;
   --font-size-body: 18px;
@@ -60,7 +50,6 @@
   --font-size-h2: 48px;
   --font-size-h1: 60px;
 
-  /* Основной межстрочный интервал для текста */
   --line-height-normal: 1.5;
   --line-height-heading: 1.2;
   --line-height-tight: 1.3;

@@ -46,18 +46,8 @@
 }
 
 .image_section {
-  background: linear-gradient(45deg, #808080, #cc6896);
   border: 4px solid var(--bg-primary);
   box-sizing: border-box;
-  height: 430px;
-  width: 300px;
-}
-
-.image {
-  position: absolute;
-  height: 490px;
-  bottom: 4px;
-  left: 300px;
 }
 
 .experience_section {
@@ -98,13 +88,6 @@
 
   .experience_section {
     width: 40%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .image {
-    display: none;
-    /* !подставить нужную  */
   }
 }
 
@@ -163,11 +146,6 @@
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .image_section {
-    width: 250px;
-    height: 330px;
   }
 }
 

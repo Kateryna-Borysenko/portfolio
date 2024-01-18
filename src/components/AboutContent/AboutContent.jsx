@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Paper from '../common/Paper/Paper';
 import LightButton from '../../uikit/LightButton/LightButton';
 import { ArrowIcon } from '../icons';
-import img from '../../images/about.png';
+import image from '../../images/about.jpg';
 import 'react-toastify/dist/ReactToastify.css';
 import s from './AboutContent.module.css';
 
@@ -44,7 +44,7 @@ const AboutContent = () => {
         <div className={s.container}>
           <div className={s.top_container}>
             <div className={s.title_container}>
-              <div className={s.position}>Fullstack Developer</div>
+              <div className={s.position}>Front End Developer</div>
               <h2 className={s.title}>Kateryna Borysenko</h2>
             </div>
             <div className={s.btn_container}>
@@ -97,7 +97,7 @@ const AboutContent = () => {
             <section className={s.image_section}>
               <img
                 className={s.image}
-                src={img}
+                src={image}
                 alt="Developer"
                 loading="lazy"
               />
