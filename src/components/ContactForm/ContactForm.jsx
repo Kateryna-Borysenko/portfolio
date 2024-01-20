@@ -3,7 +3,6 @@ import { toast } from 'react-toastify';
 import { useState, useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import s from './ContactForm.module.css';
 import Paper from '../common/Paper/Paper';
 import Button from '../../uikit/Button/Button';
 import Socials from '../../components/common/Socials/Socials';
@@ -15,6 +14,7 @@ import {
   MessageIcon,
 } from '../icons';
 import { schema } from './schema';
+import s from './ContactForm.module.css';
 
 const ContactForm = () => {
   const formRef = useRef();

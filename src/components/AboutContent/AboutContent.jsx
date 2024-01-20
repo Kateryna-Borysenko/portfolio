@@ -1,11 +1,11 @@
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Paper from '../common/Paper/Paper';
 import LightButton from '../../uikit/LightButton/LightButton';
 import { ArrowIcon } from '../icons';
 import image from '../../images/about.png';
-import 'react-toastify/dist/ReactToastify.css';
 import s from './AboutContent.module.css';
 
 const AboutContent = () => {

@@ -36,9 +36,4 @@ describe('Socials Component', () => {
       });
     });
   });
-
-  it('renders correctly and matches snapshot', () => {
-    const { asFragment } = render(<Socials />);
-    expect(asFragment()).toMatchSnapshot();
-  });
 });

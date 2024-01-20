@@ -32,7 +32,7 @@ const Modal = ({ onClose, children }) => {
   return createPortal(
     <div className={s.backdrop} onClick={handleBackdropClick}>
       <div className={s.modal}>
-        <header className={s.header}>
+        <div className={s.wrapper}>
           <button
             type="button"
             className={s.close_btn}
@@ -41,9 +41,8 @@ const Modal = ({ onClose, children }) => {
           >
             &times;
           </button>
-        </header>
-
-        <div className={s.content}>{children}</div>
+          <div className={s.content}>{children}</div>
+        </div>
       </div>
     </div>,
     modalRootRef,

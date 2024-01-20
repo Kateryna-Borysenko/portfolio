@@ -12,17 +12,17 @@ const variants = {
       type: 'spring',
       stiffness: 40,
       damping: 20,
-      duration: 0.2, // Длительность анимации открытия (меньше число = быстрее анимация)
+      duration: 0.2,
     },
   },
   closed: {
     x: '-100%',
     transition: {
-      delay: 0.5, // Задержка перед началом  закрытия
+      delay: 0.5,
       type: 'spring',
       stiffness: 450,
       damping: 40,
-      duration: 0.5, // Длительность анимации закрытия (больше число = медленнее анимация)
+      duration: 0.5,
     },
   },
 };

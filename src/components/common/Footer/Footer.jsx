@@ -1,11 +1,11 @@
 import LocalTime from '../../LocalTime/LocalTime';
-import s from './Footer.module.css';
 import CellPhone from '../CellPhone/CellPhone';
 import logo from '../../../images/logo.png';
 import { EMAIL } from '../../../utils/constants';
 import { LOCATION } from '../../../utils/constants';
 import { GITHUB_URL } from '../../../utils/urls';
 import { MIAMI_MAP_URL } from '../../../utils/urls';
+import s from './Footer.module.css';
 
 const Footer = () => {
   return (

@@ -1,3 +1,7 @@
+.wrapper {
+  padding: 40px 0;
+}
+
 .btn_container {
   margin-bottom: 30px;
 }
@@ -71,10 +75,6 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .wrapper {
-    padding: 40px 0;
-  }
-
   .list {
     height: auto;
   }
@@ -98,6 +98,7 @@
     width: calc(1170px / 4);
     margin: 0 auto 20px;
   }
+
   .item {
     width: 118px;
     height: 118px;

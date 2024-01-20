@@ -1,9 +1,5 @@
 .scroll_btn {
-  display: flex;
-  justify-content: flex-end;
-  opacity: 0;
-  transition: opacity 0.4s;
-  margin-top: 24px;
+  display: none;
 }
 
 .button {
@@ -19,9 +15,12 @@
 }
 
 .show {
+  display: flex;
+  justify-content: flex-end;
+  transition: opacity 0.4s;
   opacity: 1;
 }
 
 .hide {
-  opacity: 0;
+  display: none;
 }

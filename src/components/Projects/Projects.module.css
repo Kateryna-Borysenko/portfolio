@@ -51,6 +51,8 @@
 .img_container {
   position: relative;
   overflow: hidden;
+  width: 280px;
+  height: 280px;
 }
 
 .description {
@@ -106,7 +108,7 @@
 
 @media screen and (max-width: 1880px) {
   .container {
-    padding: 60px 30px;
+    padding: 60px 30px 40px;
     max-width: 950px;
   }
 
