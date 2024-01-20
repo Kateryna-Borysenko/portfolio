@@ -78,6 +78,7 @@
 
 .card_item:hover .description {
   transform: translateY(0);
+  background-color: var(--ui-secondary);
 }
 
 .card_caption {

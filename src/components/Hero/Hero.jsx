@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../uikit/Button/Button';
-import image from '../../images/hero.jpg';
+import image from '../../images/hero.png';
 import Paper from '../common/Paper/Paper';
 import s from './Hero.module.css';
 

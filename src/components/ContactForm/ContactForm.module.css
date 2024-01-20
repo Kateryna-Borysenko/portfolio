@@ -87,6 +87,13 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .button_container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 370px) {
   .title {
     font-size: 30px;

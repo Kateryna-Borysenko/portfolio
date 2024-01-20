@@ -148,7 +148,9 @@ const ContactForm = () => {
                 </div>
               </label>
             </div>
-            <Button name="Send Form" type="submit" ariaLabel="Send Form" />
+            <div className={s.button_container}>
+              <Button name="Send Form" type="submit" ariaLabel="Send Form" />
+            </div>
           </form>
         </div>
       </Paper>
