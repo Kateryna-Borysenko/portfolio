@@ -13,6 +13,8 @@ export const ALPACA_SCHOOL_URL = 'https://www.alpacasch.online/';
 
 export const PORTFOLIO_CODE_URL = 'https://github.com/Kateryna-Borysenko/portfolio-k.borysenko-frontend';
 export const PORTFOLIO_DEMO_URL = 'https://k-borysenko-portfolio-frontend.netlify.app';
+export const PROSHOP_CODE_URL = 'https://github.com/Kateryna-Borysenko/proshop';
+export const PROSHOP_DEMO_URL = '';
 export const UNIVER_CODE_URL = 'https://github.com/Kateryna-Borysenko/education-project';
 export const UNIVER_DEMO_URL = 'https://kb-university.netlify.app/';
 export const ERATO_CODE_URL = 'https://github.com/Kateryna-Borysenko/erato-apartmens';

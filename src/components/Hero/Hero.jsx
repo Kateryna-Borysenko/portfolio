@@ -65,7 +65,7 @@ const HeroBanner = () => {
         initial="initial"
         animate="animate"
       >
-        Front End Developer
+        Full Stack Developer
       </motion.div>
     </div>
   );

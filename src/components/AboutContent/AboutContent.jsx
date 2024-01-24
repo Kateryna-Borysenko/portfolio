@@ -44,7 +44,7 @@ const AboutContent = () => {
         <div className={s.container}>
           <div className={s.top_container}>
             <div className={s.title_container}>
-              <div className={s.position}>Front End Developer</div>
+              <div className={s.position}>Full Stack Developer</div>
               <h2 className={s.title}>Kateryna Borysenko</h2>
             </div>
             <div className={s.btn_container}>
@@ -68,7 +68,7 @@ const AboutContent = () => {
                   <ArrowIcon className={s.arrow_icon} />
                   <br />
                 </span>
-                I'm a Fullstack Developer with a rich two-year experience in
+                I'm a Full Stack Developer with a two-year experience in
                 creating dynamic web applications. Originally from the
                 picturesque regions of Eastern Ukraine, I have recently found a
                 new home in sunny Florida – a change brought about by turbulent
