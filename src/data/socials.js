@@ -1,24 +1,27 @@
-import { Facebook, GithubIcon, InstagramIcon, LinkedinIcon } from '../components/icons'
+import facebookIcon from '../images/socials/facebook.png'
+import githubIcon from '../images/socials/github.png'
+import instagramIcon from '../images/socials/instagram.png'
+import linkedinIcon from '../images/socials/linkedin.png'
 import { GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL, FACEBOOK_URL } from '../utils/urls'
 
 export const socials = [{
   id: 1,
   name: 'GIT HUB',
-  icon: <GithubIcon width='44px' />,
+  icon: githubIcon,
   url: GITHUB_URL
 }, {
   id: 2,
   name: 'LINKED IN',
-  icon: <LinkedinIcon width='44px' />,
+  icon: linkedinIcon,
   url: LINKEDIN_URL
 }, {
   id: 3,
   name: 'INSTAGRAM',
-  icon: <InstagramIcon width='44px' />,
+  icon: instagramIcon,
   url: INSTAGRAM_URL
 }, {
   id: 4,
   name: 'FACEBOOK',
-  icon: <Facebook width='44px' />,
+  icon: facebookIcon,
   url: FACEBOOK_URL
 },]

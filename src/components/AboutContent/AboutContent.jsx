@@ -89,8 +89,8 @@ const AboutContent = () => {
               </p>
               <p className={s.paragraph}>
                 <span className={s.accent}>
-                  Today, actively seeking new opportunities, I am ready to apply
-                  my skills to ambitious projects.
+                  I am actively seeking new employment opportunities to advance
+                  and further develop my career as a software engineer.
                 </span>
               </p>
             </section>

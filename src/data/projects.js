@@ -21,8 +21,8 @@ export const projects = [
     id: 2,
     title: 'ProShop',
     path: proShop,
-    desc: 'ProShop e-commerce website built with MERN & Redux Toolkit 🔥🔥🔥 xThis React project is designed to showcase the Fullstack develo professional skills and provides an interface for establishing contact with them for potential collaboration in the future.',
-    techStack: ['react', 'node JS', 'express', 'redux', 'Mongo DB'],
+    desc: 'ProShop is an eCommerce platform incorporating a shopping cart, product search, administrative panel, customer reviews, PayPal integration, and a streamlined multi-step checkout.',
+    techStack: ['React', 'Node.js', 'Bootstrap', 'Express.js', 'Redux Toolkit', 'MongoDB', 'Paypal'],
     codeLink: PROSHOP_CODE_URL,
     demoLink: PROSHOP_DEMO_URL
   },

@@ -14,7 +14,7 @@ const Socials = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {icon}
+            <img className={s.icon} src={icon} alt={name} />
             <div className={s.name}>{name}</div>
           </a>
         ))}
