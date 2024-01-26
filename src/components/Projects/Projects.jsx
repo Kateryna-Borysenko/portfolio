@@ -24,7 +24,6 @@ const Projects = () => {
         >
           GitHub
         </a>
-        .
       </h2>
 
       <ul className={s.card_list}>
@@ -34,15 +33,9 @@ const Projects = () => {
               <img className={s.img} src={item.path} alt={item.title} />
               <p className={s.description}>{item.desc}</p>
             </div>
-            <div className={s.card_caption}>
+            <div className={s.card_caption} onClick={() => handleClick(item)}>
               <h3 className={s.card_title}>{item.title}</h3>
-              <button
-                className={s.card_button}
-                onClick={() => handleClick(item)}
-                aria-label="See More"
-              >
-                ... see more
-              </button>
+              <span className={s.more}>... See More</span>
             </div>
           </li>
         ))}

@@ -149,7 +149,7 @@ const ContactForm = () => {
               </label>
             </div>
             <div className={s.button_container}>
-              <Button name="Send Form" type="submit" ariaLabel="Send Form" />
+              <Button name="Send Message" type="submit" ariaLabel="Send Form" />
             </div>
           </form>
         </div>

@@ -37,7 +37,7 @@ const Project = ({ item }) => {
             >
               <LightButton
                 name="Code"
-                icon={<CodeIcon width="24px" height="24px" />}
+                icon={<CodeIcon width="18px" height="18px" />}
               />
             </a>
             <a
@@ -47,7 +47,7 @@ const Project = ({ item }) => {
               rel="noopener noreferrer"
             >
               <LightButton
-                icon={<WebsiteIcon width="24px" height="24px" />}
+                icon={<WebsiteIcon width="18px" height="18px" />}
                 name="Demo"
               />
             </a>
