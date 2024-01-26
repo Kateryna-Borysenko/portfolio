@@ -1,4 +1,7 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 190px;
   font-size: var(--font-size-button);
   letter-spacing: 1.5px;
@@ -7,7 +10,17 @@
   padding: 14px 0;
   width: 100%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.button:hover .icon {
+  fill: var(--ui-hover);
 }
 
 .button:hover {

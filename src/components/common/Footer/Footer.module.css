@@ -41,6 +41,7 @@
 
   .contacts_info_container {
     padding-bottom: 20px;
+    margin-right: 46px;
   }
 
   .copyright_info {
@@ -55,7 +56,12 @@
     padding: 20px 15px;
   }
 
-  .copyright_info {
-    right: 25px;
+  .contacts_info_container {
+    margin-right: 55px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .logo_description {
+    display: none;
   }
 }

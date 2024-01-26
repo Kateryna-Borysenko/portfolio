@@ -3,6 +3,12 @@
   margin: 0 auto;
   max-width: 850px;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .section::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -62,20 +68,21 @@
 
 .btn_container {
   display: flex;
-  justify-content: space-between;
-  max-width: 420px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.link:first-child {
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 1300px) {
   .section {
     position: relative;
   }
+}
 
-  .btn_container {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-    flex-direction: column;
+@media screen and (max-height: 900px) {
+  .text_container {
     gap: 20px;
   }
 }
@@ -91,10 +98,7 @@
   }
 
   .btn_container {
-    top: 45px;
-    right: 50px;
-    left: auto;
-    bottom: auto;
+    justify-content: start;
   }
 }
 
@@ -113,11 +117,6 @@
 
   .text_container {
     gap: 20px;
-  }
-
-  .btn_container {
-    position: static;
-    align-items: center;
   }
 }
 
@@ -148,5 +147,14 @@
   .tech_stack_title {
     font-size: smaller;
     text-align: center;
+  }
+
+  .btn_container {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link:first-child {
+    margin: 0 0 20px 0;
   }
 }

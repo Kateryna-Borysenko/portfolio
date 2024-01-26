@@ -13,3 +13,6 @@ export { ReactComponent as MessageIcon } from "../../uikit/static/massage.svg";
 
 export { ReactComponent as NotFoundPageIcon } from "../../uikit/static/file_error_not_found_icon.svg";
 
+export { ReactComponent as CodeIcon } from "../../uikit/static/code.svg";
+export { ReactComponent as WebsiteIcon } from "../../uikit/static/web-site.svg";
+
