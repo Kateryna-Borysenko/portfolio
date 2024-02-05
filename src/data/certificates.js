@@ -2,18 +2,21 @@ import frontendInfopulseCertificate from "../images/certificates/infopulse.jpg";
 import englishPrimeCertificate from "../images/certificates/english.jpeg";
 import fullstackGoItCertificate from "../images/certificates/fullstack.jpg";
 import designAlpacaSchoolCertificate from "../images/certificates/design.png";
+import traversyMediaCertificate from "../images/certificates/traversy.jpg";
 
 import frontendInfopulseCertificate_m from "../images/certificates/infopulse_m.jpg";
 import englishPrimeCertificate_m from "../images/certificates/english_m.jpg";
 import fullstackGoItCertificate_m from "../images/certificates/fullstack_m.jpg";
 import designAlpacaSchoolCertificate_m from "../images/certificates/design_m.jpg";
+import traversyMediaCertificate_m from "../images/certificates/traversy_m.jpg";
 
 import frontendInfopulseCertificate_s from "../images/certificates/infopulse_s.jpg";
 import englishPrimeCertificate_s from "../images/certificates/english_s.jpg";
 import fullstackGoItCertificate_s from "../images/certificates/fullstack_s.jpg";
 import designAlpacaSchoolCertificate_s from "../images/certificates/design_s.jpg";
+import traversyMediaCertificate_s from "../images/certificates/traversy_s.jpg";
 
-import { INFOPULSE_UNIVER_URL, ENGLISH_PRIME_SCHOOL_URL, GO_IT_URL, ALPACA_SCHOOL_URL } from '../utils/urls'
+import { INFOPULSE_UNIVER_URL, ENGLISH_PRIME_SCHOOL_URL, GO_IT_URL, ALPACA_SCHOOL_URL, TRAVERSY_URL } from '../utils/urls'
 
 
 export const certificates = [
@@ -69,6 +72,19 @@ export const certificates = [
     city: 'Kyiv',
     year: '2023',
     duration: '1 week'
+  },
+  {
+    id: 5,
+    imgSrc: traversyMediaCertificate,
+    imgSrc_m: traversyMediaCertificate_m,
+    imgSrc_s: traversyMediaCertificate_s,
+    alt: 'MERN Certificate',
+    width: '736px',
+    title: 'Traversy Media',
+    url: TRAVERSY_URL,
+    city: 'USA',
+    year: '2024',
+    duration: '2 weeks / 09eea40'
   },
 ]
 

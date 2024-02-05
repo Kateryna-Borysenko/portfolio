@@ -9,6 +9,7 @@ export const INFOPULSE_UNIVER_URL = 'https://www.infopulse.com/';
 export const ENGLISH_PRIME_SCHOOL_URL = 'https://lp.englishprime.ua/';
 export const GO_IT_URL = 'https://goit.global/ua-ru/courses/bootcamp/';
 export const ALPACA_SCHOOL_URL = 'https://www.alpacasch.online/';
+export const TRAVERSY_URL = 'https://www.traversymedia.com'
 
 
 export const PORTFOLIO_CODE_URL = 'https://github.com/Kateryna-Borysenko/portfolio-k.borysenko-frontend';
