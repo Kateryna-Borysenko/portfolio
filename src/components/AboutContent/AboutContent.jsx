@@ -49,8 +49,8 @@ const AboutContent = () => {
             </div>
             <div className={s.btn_container}>
               <LightButton
-                name="Download CV"
-                ariaLabel="Download CV"
+                name="Resume"
+                ariaLabel="Resume"
                 onClick={handleDownloadBtnClick}
               />
               <LightButton

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../uikit/Button/Button';
-import image from '../../images/hero.png';
+import image from '../../images/hero.jpg';
 import Paper from '../common/Paper/Paper';
 import s from './Hero.module.css';
 
@@ -32,12 +32,12 @@ const HeroBanner = () => {
         <div className={s.hero_container}>
           <div className={s.content_container}>
             <h1 className={s.title}>
-              Manifesting <br className={s.br} /> bold imaginations
-              <br className={s.br} /> into remarkable results.
+              Bridging Concepts <br className={s.br} /> with Solutions
+              <br className={s.br} /> for Impactful Outcomes.
             </h1>
             <p className={s.quote}>
-              Every journey starts with small decision. For us it will be a
-              short call where we will get to know each other.
+              Every journey starts with a small decision. Contact me so that
+              together we can realize your ideas.
             </p>
             <div className={s.signature}>Kateryna Borysenko</div>
             <div className={s.button_container}>
