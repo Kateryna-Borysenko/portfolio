@@ -28,6 +28,7 @@ import mongodb from '../images/skills/mongodb.png';
 import typeScript from '../images/skills/type-script.png';
 import webpack from '../images/skills/webpack.png';
 import framerMotion from '../images/skills/framer-motion.png';
+import bootstrap from '../images/skills/bootstrap.png';
 
 export const skills = [
   {
@@ -238,6 +239,13 @@ export const skills = [
     name: 'Framer Motion',
     path: framerMotion,
     alt: 'Framer Motion Logo',
+    type: 'Frameworks and Libraries'
+  },
+  {
+    id: 31,
+    name: 'Bootstrap',
+    path: bootstrap,
+    alt: 'Bootstrap Logo',
     type: 'Frameworks and Libraries'
   },
 ];

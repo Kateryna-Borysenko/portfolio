@@ -49,8 +49,8 @@ const AboutContent = () => {
             </div>
             <div className={s.btn_container}>
               <LightButton
-                name="Resume"
-                ariaLabel="Resume"
+                name="Resume PDF"
+                ariaLabel="Resume PDF"
                 onClick={handleDownloadBtnClick}
               />
               <LightButton
@@ -64,15 +64,15 @@ const AboutContent = () => {
             <section className={s.description_section}>
               <p className={s.paragraph}>
                 <span className={s.accent}>
-                  Hey, that's my name up there.
+                  Hi, that's my name up there.
                   <ArrowIcon className={s.arrow_icon} />
                   <br />
                 </span>
-                I'm a Full Stack Developer with a two-year experience in
-                creating dynamic web applications. Originally from the
-                picturesque regions of Eastern Ukraine, I have recently found a
-                new home in sunny Florida – a change brought about by turbulent
-                times in my homeland.
+                As a Full Stack Developer with over two years of experience, I
+                have honed my skills in creating dynamic web applications.
+                Originally from the picturesque regions of Eastern Ukraine, I
+                have recently found a new home in sunny Florida – a change
+                brought about by turbulent times in my homeland.
               </p>
               <p className={s.paragraph}>
                 My professional story is a path of relentless discoveries and

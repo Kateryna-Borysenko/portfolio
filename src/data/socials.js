@@ -24,4 +24,5 @@ export const socials = [{
   name: 'FACEBOOK',
   icon: facebookIcon,
   url: FACEBOOK_URL
-},]
+},
+]
