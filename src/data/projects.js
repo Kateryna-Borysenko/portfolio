@@ -13,7 +13,7 @@ export const projects = [
     title: 'This Project',
     path: portfolio,
     desc: "This React project is designed to showcase the Fullstack developer's professional skills and provides an interface for establishing contact with them for potential collaboration in the future.",
-    techStack: ['react', 'react router dom V6', 'react hook form', 'yup', 'framer motion', 'node JS'],
+    techStack: ['react', 'react-router-dom^6', 'react-hook-form', 'yup', 'framer-motion'],
     codeLink: PORTFOLIO_CODE_URL,
     demoLink: PORTFOLIO_DEMO_URL
   },
@@ -21,8 +21,8 @@ export const projects = [
     id: 2,
     title: 'ProShop',
     path: proShop,
-    desc: 'ProShop is an eCommerce platform incorporating a shopping cart, product search, administrative panel, customer reviews, PayPal integration, and a streamlined multi-step checkout.',
-    techStack: ['React', 'Node.js', 'Bootstrap', 'Express.js', 'Redux Toolkit', 'MongoDB', 'Paypal'],
+    desc: 'ProShop is an eCommerce platform incorporating a shopping cart, product search, administrative panel, customer reviews, PayPal integration, and streamlined multi-step checkout.',
+    techStack: ['react', 'node.js', 'bootstrap', 'express.js', 'redux toolkit', 'mongoDB', 'paypal'],
     codeLink: PROSHOP_CODE_URL,
     demoLink: PROSHOP_DEMO_URL
   },
@@ -30,8 +30,8 @@ export const projects = [
     id: 3,
     title: 'University',
     path: univer,
-    desc: 'A web application built with React / Redux in two languages for adding university tutors, managing branches (edit, delete), and city-based filtering, with Firebase authentication for secure data access.',
-    techStack: ['react', 'react router dom V6', 'react hook form', 'yup', 'i18next', 'redux', 'redux thunk', 'firebase'],
+    desc: 'A React&Redux web app for university management, supporting English and Ukrainian, with features for adding teachers, and managing branches. Includes city-based filtering and secure Firebase authentication.',
+    techStack: ['react', 'react-router-dom^6', 'react-hook-form', 'yup', 'i18next', 'redux-thunk', 'firebase'],
     codeLink: UNIVER_CODE_URL,
     demoLink: UNIVER_DEMO_URL
   },
@@ -49,7 +49,7 @@ export const projects = [
     title: 'Todo List',
     path: todo,
     desc: 'This React project helps you overcome forgetfulness and deadline struggles. It provides a centralized task management system, ensuring you never miss important tasks. Regain control of your productivity effortlessly.',
-    techStack: ['react', 'react router dom V5', 'redux'],
+    techStack: ['react', 'react-router-dom^5', 'redux'],
     codeLink: TODO_CODE_URL,
     demoLink: TODO_DEMO_URL
   },
@@ -58,7 +58,7 @@ export const projects = [
     title: 'Phone Book',
     path: phoneBook,
     desc: 'A React-based application with registration that allows users to create their own phonebook and simplifies contact searching by filtering through entered names. The application also supports both light and dark themes and is available in three languages.',
-    techStack: ['react', 'react router dom V5', 'redux', 'i18next'],
+    techStack: ['react', 'react-router-dom^5', 'redux', 'i18next'],
     codeLink: PHONE_BOOK_CODE_URL,
     demoLink: PHONE_BOOK_DEMO_URL
   },
