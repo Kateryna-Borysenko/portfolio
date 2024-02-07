@@ -27,7 +27,7 @@
     "coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "sudo netlify deploy"
+    "deploy": "sudo netlify deploy --prod"
   },
   "eslintConfig": {
     "extends": [

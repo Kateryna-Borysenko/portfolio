@@ -3,7 +3,7 @@ export const LINKEDIN_URL = 'https://www.linkedin.com/in/kateryna-borysenko/';
 export const INSTAGRAM_URL = 'https://www.instagram.com/k___borysenko/';
 export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=100089711004988';
 
-export const TAMPA_MAP_URL = 'https://maps.app.goo.gl/u6rdvCU7TCw4qXX98';
+export const ST_PETE_MAP_URL = 'https://maps.app.goo.gl/Byxj1N8BvGhvDaUF6';
 
 export const INFOPULSE_UNIVER_URL = 'https://www.infopulse.com/';
 export const ENGLISH_PRIME_SCHOOL_URL = 'https://lp.englishprime.ua/';

@@ -126,4 +126,8 @@
   .image_container {
     min-width: 250px;
   }
+
+  .image {
+    max-height: 250px;
+  }
 }
