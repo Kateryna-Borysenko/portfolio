@@ -5,10 +5,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@hookform/resolvers": "^3.3.3",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^10.16.4",
-    "netlify-cli": "^17.14.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.4",
@@ -29,11 +26,14 @@
     "predeploy": "npm run build",
     "deploy": "sudo netlify deploy --prod"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.11",
+    "@types/testing-library__jest-dom": "^6.0.0",
+    "netlify-cli": "^17.14.0"
   },
   "browserslist": {
     "production": [
@@ -45,18 +45,6 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@testing-library/jest-dom": "^6.1.5",
-    "@types/jest": "^29.5.11",
-    "@types/testing-library__jest-dom": "^6.0.0"
-  },
-  "jest": {
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
-      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ]
   }
 }
