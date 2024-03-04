@@ -14,6 +14,8 @@ export const TRAVERSY_URL = 'https://www.traversymedia.com'
 
 export const PORTFOLIO_CODE_URL = 'https://github.com/Kateryna-Borysenko/portfolio-k.borysenko-frontend';
 export const PORTFOLIO_DEMO_URL = 'https://k-borysenko-portfolio-frontend.netlify.app';
+export const RENTAL_EASY_CODE_URL = 'https://github.com/Kateryna-Borysenko/rental-easy';
+export const RENTAL_EASY__DEMO_URL = '';
 export const PROSHOP_CODE_URL = 'https://github.com/Kateryna-Borysenko/proshop';
 export const PROSHOP_DEMO_URL = 'https://proshop-dlbh.onrender.com';
 export const UNIVER_CODE_URL = 'https://github.com/Kateryna-Borysenko/education-project';
