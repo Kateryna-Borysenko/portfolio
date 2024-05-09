@@ -4,7 +4,8 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/k___borysenko/';
 export const FACEBOOK_URL =
   'https://www.facebook.com/profile.php?id=100089711004988';
 
-export const ST_PETE_MAP_URL = 'https://maps.app.goo.gl/Byxj1N8BvGhvDaUF6';
+export const PINELLAS_PARK_MAP_URL =
+  'https://maps.app.goo.gl/CmafmqeB35Gs7cBi7';
 
 export const INFOPULSE_UNIVER_URL = 'https://www.infopulse.com/';
 export const ENGLISH_PRIME_SCHOOL_URL = 'https://lp.englishprime.ua/';
@@ -21,7 +22,7 @@ export const PHONEBOOK_DEMO_URL = 'https://phonebook-frontend-pied.vercel.app';
 export const PORTFOLIO_CODE_URL =
   'https://github.com/Kateryna-Borysenko/portfolio-k.borysenko-frontend';
 export const PORTFOLIO_DEMO_URL =
-  'https://k-borysenko-portfolio-frontend.netlify.app';
+  'https://portfolio-three-theta-90.vercel.app/';
 export const RENTAL_EASY_CODE_URL =
   'https://github.com/Kateryna-Borysenko/rental-easy';
 export const RENTAL_EASY_DEMO_URL = 'https://rental-easy.vercel.app';

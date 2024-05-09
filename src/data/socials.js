@@ -1,5 +1,4 @@
 import facebookIcon from '../images/socials/facebook.svg';
-import githubIcon from '../images/socials/github.svg';
 import instagramIcon from '../images/socials/instagram.svg';
 import linkedinIcon from '../images/socials/linkedin.svg';
 import {

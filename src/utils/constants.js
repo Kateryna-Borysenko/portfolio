@@ -1,3 +1,3 @@
-export const PHONE_NUMBER = "+1 (727) 300-3230";
-export const EMAIL = "borysenko.info@gmail.com";
-export const LOCATION = "Florida, USA";
+export const PHONE_NUMBER = '+1 (000) 000-0000';
+export const EMAIL = 'borysenko.info@gmail.com';
+export const LOCATION = 'Florida, USA';

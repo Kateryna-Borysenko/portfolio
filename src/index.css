@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
 
 :root {
+  --toastify-color-success: var(--ui-hover);
+  --toastify-icon-color-success: var(--ui-hover);
+
+  --toastify-color-error: var(--ui-active);
+  --toastify-icon-color-error: var(--ui-active);
+
   --brand-deep-charcoal: #282626ff;
   --brand-light-brown: #b5845d;
   --brand-rich-mahogany: #4e2422ff;
@@ -71,6 +77,12 @@ body {
   background-color: var(--bg-primary);
   font-size: var(--font-size-body);
   line-height: var(--line-height-normal);
+}
+
+.Toastify__toast-container {
+  position: fixed;
+  top: 97px;
+  right: 15;
 }
 
 h1,

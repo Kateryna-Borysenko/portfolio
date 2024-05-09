@@ -8,7 +8,6 @@ import formik from '../images/skills/formik.png';
 import git from '../images/skills/git.png';
 import github from '../images/skills/github.png';
 import gitlab from '../images/skills/gitlab.png';
-import graphql from '../images/skills/graphQL.png';
 import html5 from '../images/skills/html5.png';
 import jest from '../images/skills/jest.png';
 import jira from '../images/skills/jira.png';
@@ -103,13 +102,6 @@ export const skills = [
     path: gitlab,
     alt: 'GitLab Logo',
     type: 'Development Tools',
-  },
-  {
-    id: 11,
-    name: 'Graph QL',
-    path: graphql,
-    alt: 'GraphQL Logo',
-    type: 'Databases and APIs',
   },
   {
     id: 12,

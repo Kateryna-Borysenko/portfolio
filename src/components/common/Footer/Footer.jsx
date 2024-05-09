@@ -4,7 +4,7 @@ import logo from '../../../images/logo.png';
 import { EMAIL } from '../../../utils/constants';
 import { LOCATION } from '../../../utils/constants';
 import { GITHUB_URL } from '../../../utils/urls';
-import { ST_PETE_MAP_URL } from '../../../utils/urls';
+import { PINELLAS_PARK_MAP_URL } from '../../../utils/urls';
 import s from './Footer.module.css';
 
 const Footer = () => {
@@ -33,7 +33,11 @@ const Footer = () => {
           </div>
           <LocalTime />
           <div className={s.location}>
-            <a href={ST_PETE_MAP_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href={PINELLAS_PARK_MAP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {LOCATION}
             </a>
           </div>
