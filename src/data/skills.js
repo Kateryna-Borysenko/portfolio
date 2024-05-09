@@ -29,6 +29,9 @@ import typeScript from '../images/skills/type-script.png';
 import webpack from '../images/skills/webpack.png';
 import framerMotion from '../images/skills/framer-motion.png';
 import bootstrap from '../images/skills/bootstrap.png';
+import vite from '../images/skills/vite.png';
+import i18next from '../images/skills/i18next.png';
+import cloudinary from '../images/skills/cloudinary.png';
 
 export const skills = [
   {
@@ -36,216 +39,237 @@ export const skills = [
     name: 'Agile',
     path: agile,
     alt: 'Agile Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 2,
     name: 'Apollo',
     path: apollo,
     alt: 'Apollo Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 3,
     name: 'CSS 3',
     path: css3,
     alt: 'CSS3 Logo',
-    type: 'Programming Languages'
+    type: 'Programming Languages',
   },
   {
     id: 4,
     name: 'Express',
     path: express,
     alt: 'Express Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 5,
     name: 'Figma',
     path: figma,
     alt: 'Figma Logo',
-    type: 'Testing and Design'
+    type: 'Testing and Design',
   },
   {
     id: 6,
     name: 'Firebase',
     path: firebase,
     alt: 'Firebase Logo',
-    type: 'Databases and APIs'
+    type: 'Databases and APIs',
   },
   {
     id: 7,
     name: 'Formik',
     path: formik,
     alt: 'Formik Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 8,
     name: 'Git',
     path: git,
     alt: 'Git Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 9,
     name: 'Git Hub',
     path: github,
     alt: 'GitHub Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 10,
     name: 'Git Lab',
     path: gitlab,
     alt: 'GitLab Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 11,
     name: 'Graph QL',
     path: graphql,
     alt: 'GraphQL Logo',
-    type: 'Databases and APIs'
+    type: 'Databases and APIs',
   },
   {
     id: 12,
     name: 'HTML5',
     path: html5,
     alt: 'HTML5 Logo',
-    type: 'Programming Languages'
+    type: 'Programming Languages',
   },
   {
     id: 13,
     name: 'Jest',
     path: jest,
     alt: 'Jest Logo',
-    type: 'Testing and Design'
+    type: 'Testing and Design',
   },
   {
     id: 14,
     name: 'Jira',
     path: jira,
     alt: 'Jira Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 15,
     name: 'JS',
     path: js,
     alt: 'JavaScript Logo',
-    type: 'Programming Languages'
+    type: 'Programming Languages',
   },
   {
     id: 16,
     name: 'Next JS',
     path: nextJs,
     alt: 'Next.js Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 17,
     name: 'Node JS + Express',
     path: nodeJsExpress,
     alt: 'Node.js and Express Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 18,
     name: 'React Hook Form',
     path: reactHookForm,
     alt: 'React Hook Form Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 19,
     name: 'React Native',
     path: reactNative,
     alt: 'React Native Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 20,
     name: 'React Testing Library',
     path: reactTestingLibrary,
     alt: 'React Testing Library Logo',
-    type: 'Testing and Design'
+    type: 'Testing and Design',
   },
   {
     id: 21,
     name: 'React',
     path: react,
     alt: 'React Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 22,
     name: 'Redux',
     path: redux,
     alt: 'Redux Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 23,
     name: 'REST API',
     path: restApi,
     alt: 'REST API Logo',
-    type: 'Databases and APIs'
+    type: 'Databases and APIs',
   },
   {
     id: 24,
     name: 'SASS',
     path: sass,
     alt: 'SASS Logo',
-    type: 'Testing and Design'
+    type: 'Testing and Design',
   },
   {
     id: 25,
     name: 'Styled components',
     path: styledComponents,
     alt: 'Styled Components Logo',
-    type: 'Testing and Design'
+    type: 'Testing and Design',
   },
   {
     id: 26,
     name: 'Trello',
     path: trello,
     alt: 'Trello Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 27,
     name: 'Mongo DB',
     path: mongodb,
     alt: 'MongoDB Logo',
-    type: 'Databases and APIs'
+    type: 'Databases and APIs',
   },
   {
     id: 28,
     name: 'Type Script',
     path: typeScript,
     alt: 'Type Script Logo',
-    type: 'Programming Languages'
+    type: 'Programming Languages',
   },
   {
     id: 29,
     name: 'Webpack',
     path: webpack,
     alt: 'Webpack Logo',
-    type: 'Development Tools'
+    type: 'Development Tools',
   },
   {
     id: 30,
     name: 'Framer Motion',
     path: framerMotion,
     alt: 'Framer Motion Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
   },
   {
     id: 31,
     name: 'Bootstrap',
     path: bootstrap,
     alt: 'Bootstrap Logo',
-    type: 'Frameworks and Libraries'
+    type: 'Frameworks and Libraries',
+  },
+  {
+    id: 32,
+    name: 'Vite',
+    path: vite,
+    alt: 'Vite Logo',
+    type: 'Development Tools',
+  },
+  {
+    id: 33,
+    name: 'i18next',
+    path: i18next,
+    alt: 'i18next',
+    type: 'Frameworks and Libraries',
+  },
+  {
+    id: 34,
+    name: 'cloudinary',
+    path: cloudinary,
+    alt: 'cloudinary',
+    type: 'Databases and APIs',
   },
 ];
