@@ -4,7 +4,7 @@ import s from './Socials.module.css';
 const Socials = () => {
   return (
     <div className={s.container}>
-      <h2 className={s.title}>Follow Me</h2>
+      <h2 className={s.title}>Get Social</h2>
       <ul className={s.socials_list}>
         {socials.map(({ id, name, icon, url }) => (
           <a

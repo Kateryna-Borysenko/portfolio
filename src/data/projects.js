@@ -88,7 +88,7 @@ export const projects = [
     id: 4,
     title: 'This Project',
     path: portfolio,
-    desc: "This React project is designed to showcase the Fullstack developer's professional skills and provides an interface for establishing contact with them for potential collaboration in the future.",
+    desc: 'This React project aims to showcase the professional skills of a Fullstack developer and provides an interface to connect with her for potential future collaboration.',
     techStack: [
       'react',
       'react-router-dom^6',

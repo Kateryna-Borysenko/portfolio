@@ -16,11 +16,11 @@ const Carousel = ({ items }) => {
   }, []);
 
   const goToPrevious = useCallback(() => {
-    goToSlide(currentIndex === 0 ? items.length - 1 : currentIndex - 1);
+    goToSlide(currentIndex === items.length - 1 ? 0 : currentIndex + 1);
   }, [currentIndex, items.length, goToSlide]);
 
   const goToNext = useCallback(() => {
-    goToSlide(currentIndex === items.length - 1 ? 0 : currentIndex + 1);
+    goToSlide(currentIndex === 0 ? items.length - 1 : currentIndex - 1);
   }, [currentIndex, items.length, goToSlide]);
 
   useEffect(() => {
