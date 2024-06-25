@@ -41,12 +41,11 @@
 
   .contacts_info_container {
     padding-bottom: 20px;
-    margin-right: 46px;
   }
 
   .copyright_info {
     position: absolute;
-    right: 40px;
+    right: 20px;
     bottom: 16px;
   }
 }
@@ -55,12 +54,12 @@
   .container {
     padding: 20px 15px;
   }
-
-  .contacts_info_container {
-    margin-right: 55px;
-  }
 }
+
 @media screen and (max-width: 380px) {
+  .logo_link {
+    margin-top: 8px;
+  }
   .logo_description {
     display: none;
   }
