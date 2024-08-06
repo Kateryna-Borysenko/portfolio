@@ -18,7 +18,7 @@ const AboutContent = () => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'cv_frontend_react_borysenko.pdf';
+        a.download = 'cv_fullstack_borysenko.pdf';
         document.body.appendChild(a);
         a.click();
         a.remove();
